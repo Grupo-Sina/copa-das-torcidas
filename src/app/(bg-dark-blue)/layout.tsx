@@ -6,7 +6,7 @@ import Image from "next/image";
 import Header from "../components/Header/Header";
 import Footer from "../components/Footer/Footer";
 
-export default function MissionsLayout({
+export default function HomeLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
@@ -16,7 +16,7 @@ export default function MissionsLayout({
       <Header />
       <div
         className="flex flex-1 bg-no-repeat bg-center bg-cover object-cover"
-        style={{ backgroundImage: "url('/lightbluebg.png')" }}
+        style={{ backgroundImage: "url('/darkbluebg.png')" }}
       >
         {children}
       </div>
