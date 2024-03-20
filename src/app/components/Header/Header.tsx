@@ -17,27 +17,27 @@ export default function Header() {
       </NavbarContent>
       <NavbarContent className="hidden sm:flex gap-4" justify="center">
         <NavbarItem isActive>
-          <Link color="success" aria-current="page" className="font-robotoRegular">
+          <Link href="/" color="success" aria-current="page" className="font-robotoRegular">
             Início
           </Link>
         </NavbarItem>
         <NavbarItem>
-          <Link className="text-white font-robotoRegular">Sobre</Link>
+          <Link href="/about" className="text-white font-robotoRegular">Sobre</Link>
         </NavbarItem>
         <NavbarItem>
-          <Link className="text-white font-robotoRegular">Missões</Link>
+          <Link href="/missions" className="text-white font-robotoRegular">Missões</Link>
         </NavbarItem>
         <NavbarItem>
-          <Link className="text-white font-robotoRegular">Times</Link>
+          <Link href="/teams" className="text-white font-robotoRegular">Times</Link>
         </NavbarItem>
         <NavbarItem>
-          <Link className="text-white font-robotoRegular">Ranking</Link>
+          <Link href="/ranking" className="text-white font-robotoRegular">Ranking</Link>
         </NavbarItem>
         <NavbarItem>
-          <Link className="text-white font-robotoRegular">FAQ</Link>
+          <Link href="/faq" className="text-white font-robotoRegular">FAQ</Link>
         </NavbarItem>
         <NavbarItem>
-          <Link className="text-white font-robotoRegular">Tutoriais</Link>
+          <Link href="/tutorials" className="text-white font-robotoRegular">Tutoriais</Link>
         </NavbarItem>
       </NavbarContent>
       <NavbarContent justify="end">
