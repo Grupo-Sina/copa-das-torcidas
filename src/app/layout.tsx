@@ -2,6 +2,11 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 
+import Image from "next/image";
+import Providers from "./providers";
+import Header from "./components/Header/Header";
+import Footer from "./components/Footer/Footer";
+
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
@@ -16,7 +21,19 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className=" overflow-x-hidden">
+        <Providers>
+          <div className="flex flex-col bg-yellow w-screen min-h-screen">
+            <Header />
+            <div className="flex flex-1 bg-no-repeat bg-center bg-cover object-cover" style={{ backgroundImage: "url('/darkbluebg.png')" }}>
+              {children}
+            </div>
+            <Footer />
+          </div>
+          {/* { children } */}
+        </Providers>
+      </body>
     </html>
   );
 }
+
