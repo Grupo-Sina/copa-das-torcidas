@@ -52,22 +52,16 @@
   src: url("./fonts/Clovergrotesk-Black.ttf");
 }
 
-/* @font-face {
-  font-family: "";
-  src: url("./fonts/Heading-Pro-Heavy-trial.ttf");
-}
 @font-face {
-  font-family: "";
-  src: url("./fonts/Heading-Pro-Heavy-trial.ttf");
+  font-family: "Clover Grotesk Light";
+  src: url("./fonts/Clovergrotesk-Light.ttf");
 }
+
 @font-face {
-  font-family: "";
-  src: url("./fonts/Heading-Pro-Heavy-trial.ttf");
+  font-family: "Clover Grotesk Regular";
+  src: url("./fonts/Clovergrotesk-Regular.ttf");
 }
-@font-face {
-  font-family: "";
-  src: url("./fonts/Heading-Pro-Heavy-trial.ttf");
-} */
+
 
 body {
   margin: 0;

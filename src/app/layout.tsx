@@ -22,13 +22,6 @@ export default function RootLayout({
     <html lang="en">
       <body className=" overflow-x-hidden">
         <Providers>
-          {/* <div className="flex flex-col bg-yellow w-screen min-h-screen">
-            <Header />
-            <div className="flex flex-1 bg-no-repeat bg-center bg-cover object-cover" style={{ backgroundImage: "url('/darkbluebg.png')" }}>
-              {children}
-            </div>
-            <Footer />
-          </div> */}
           { children }
         </Providers>
       </body>

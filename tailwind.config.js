@@ -29,6 +29,8 @@ module.exports = {
         robotoRegular: ['Roboto Regular', 'sans-serif'],
         robotoBold: ['Roboto Bold', 'sans-serif'],
         cloverGroteskBlack: ['Clover Grotesk Black', 'sans-serif'],
+        cloverGroteskBlackLight: ['Clover Grotesk Light', 'sans-serif'],
+        cloverGroteskBlackRegular: ['Clover Grotesk Regular', 'sans-serif'],
         
       },
     },
