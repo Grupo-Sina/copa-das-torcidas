@@ -1,12 +1,13 @@
 'use client'
 
-import { NextUIProvider } from "@nextui-org/react";
-import { ReactNode } from "react";
+import { AppContextProvider } from '@/context/AppContext'
+import { NextUIProvider } from '@nextui-org/react'
+import { ReactNode } from 'react'
 
-export default function Providers ({ children }: { children: ReactNode }) {
+export default function Providers({ children }: { children: ReactNode }) {
   return (
-    <NextUIProvider>
-      {children}
-    </NextUIProvider>
+    <AppContextProvider>
+      <NextUIProvider>{children}</NextUIProvider>
+    </AppContextProvider>
   )
 }

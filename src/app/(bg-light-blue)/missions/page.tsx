@@ -1,8 +1,8 @@
-"use client";
+'use client'
 
-import { Accordion, AccordionItem, Button, Divider } from "@nextui-org/react";
-import Image from "next/image";
-import React from "react";
+import { Accordion, AccordionItem, Button, Divider } from '@nextui-org/react'
+import Image from 'next/image'
+import React from 'react'
 
 export default function Missions() {
   return (
@@ -12,7 +12,7 @@ export default function Missions() {
           MISSÕES ATIVAS
         </h1>
         <Accordion
-          defaultExpandedKeys={["1"]}
+          defaultExpandedKeys={['1']}
           className="bg-[#001F6D] text-white lg:w-[805px] p-6 rounded-xl"
         >
           <AccordionItem
@@ -25,15 +25,15 @@ export default function Missions() {
               </div>
             }
             classNames={{
-              subtitle: "bg-white",
-              title: "text-white font-robotoRegular",
+              subtitle: 'bg-white',
+              title: 'text-white font-robotoRegular',
             }}
           >
             <p className="text-white font-robotoRegular text-[18px]">
-              Valem{" "}
+              Valem{' '}
               <span className="text-[#00E46F] font-robotoRegularBold font-bold text-[18px]">
                 10 Pontos
-              </span>{" "}
+              </span>{' '}
               (10P)
             </p>
             <br />
@@ -61,14 +61,14 @@ export default function Missions() {
               </div>
             }
             classNames={{
-              title: "text-white font-robotoRegular",
+              title: 'text-white font-robotoRegular',
             }}
           >
             <p className="text-white font-robotoRegular text-[18px]">
-              Valem{" "}
+              Valem{' '}
               <span className="text-[#00E46F] font-robotoRegularBold font-bold text-[18px]">
                 10 Pontos
-              </span>{" "}
+              </span>{' '}
               (10P)
             </p>
             <br />
@@ -96,14 +96,14 @@ export default function Missions() {
               </div>
             }
             classNames={{
-              title: "text-white font-robotoRegular",
+              title: 'text-white font-robotoRegular',
             }}
           >
             <p className="text-white font-robotoRegular text-[18px]">
-              Valem{" "}
+              Valem{' '}
               <span className="text-[#00E46F] font-robotoRegularBold font-bold text-[18px]">
                 10 Pontos
-              </span>{" "}
+              </span>{' '}
               (10P)
             </p>
             <br />
@@ -125,7 +125,7 @@ export default function Missions() {
       </div>
 
       <Image
-        src={"/grouplogotext.png"}
+        src={'/grouplogotext.png'}
         alt="logo eds copa das torcidas"
         width={660}
         height={476}
@@ -134,5 +134,5 @@ export default function Missions() {
         className="h-[452px] w-[603px]"
       />
     </main>
-  );
+  )
 }
