@@ -10,12 +10,10 @@ import ModalQrCode from '@/app/components/ModalQrCode/ModalQrCode'
 export default function Teams() {
   const [searchTerm, setSearchTerm] = useState('')
 
-  // Função para filtrar os times com base no termo de pesquisa
   const filteredTeams = teams.filter((item) => {
     return item.name.toLowerCase().includes(searchTerm.toLowerCase())
   })
 
-  // Função para atualizar o termo de pesquisa
   const handleSearchChange = (event: ChangeEvent<HTMLInputElement>) => {
     setSearchTerm(event.target.value)
   }

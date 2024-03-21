@@ -1,7 +1,7 @@
 import { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Times Participantes - Copa das Torcidas',
+  title: 'FAQ - Copa das Torcidas',
   description: 'Copa das torcidas',
 }
 
@@ -9,6 +9,6 @@ interface LayoutProps {
   children: React.ReactNode
 }
 
-export default function LayoutTeams({ children }: LayoutProps) {
+export default function LayoutFaq({ children }: LayoutProps) {
   return <>{children}</>
 }
