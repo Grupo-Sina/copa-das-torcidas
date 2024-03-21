@@ -85,3 +85,11 @@ body,
     padding: 12px
   }  
 }
+
+/* .is-splitted{
+  background:#001F6D ;
+} */
+.group-\[\.is-splitted\]\:bg-content1{
+  background-color:#001F6D !important;
+  
+}
