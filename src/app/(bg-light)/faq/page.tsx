@@ -7,7 +7,7 @@ export default function Faq() {
   return (
     <div className="flex items-center justify-evenly w-full relative flex-col lg:flex-row">
       <div className="flex flex-col lg:w-[1160px] w-full z-10 md:p-16 p-4">
-        <h1 className="mb-3 lg:ml-6 text-shadow lg:text-start text-center text-shadow-lg sm:text-shadow-none font-cloverGroteskBlackRegular text-[#001F6D] text-[32px] md:text-[56px]  font-bold">
+        <h1 className="mb-3 lg:ml-4 text-shadow lg:text-start text-center text-shadow-lg sm:text-shadow-none font-cloverGroteskBlackRegular text-[#001F6D] text-[32px] md:text-[56px]  font-bold">
           FAQ
         </h1>
 
