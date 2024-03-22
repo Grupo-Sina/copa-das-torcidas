@@ -1,9 +1,22 @@
+"use client";
+
+import useWindowWidth from "@/utils/window-width-hook";
 import Image from "next/image";
 
 export default function Home() {
+  const windowWidth = useWindowWidth();
+
+  const bannerSrc =
+    windowWidth && windowWidth < 768
+      ? "/mobile-bannerclubedasorte.png"
+      : "/bannerclubedasorte.png";
+
   return (
-    <main className="flex-1 flex flex-col justify-evenly overflow-auto">
-      <div className="flex items-center justify-center gap-16">
+    <main className="flex-1 flex flex-col items-center justify-evenly overflow-auto p-8 gap-5">
+      <div
+        className="overflow-hidden flex flex-col lg:flex-row items-center justify-center gap-4 2xl:gap-16 bg-white w-[85%] p-4 px-4 rounded-xl h-auto"
+        style={{ backgroundImage: "url('/lightbgdiv.png')" }}
+      >
         <Image
           src={"/escudocopadastorcidas.png"}
           alt="escudo copa das torcidas"
@@ -11,18 +24,20 @@ export default function Home() {
           height={361}
           quality={100}
           priority={true}
-          className="ml-12 2xl:ml-0"
+          className="w-[168px] h-[180px] xl:h-[321px] xl:w-[287px]"
         />
-        <div className="flex flex-col w-[1222px] my-8 lg:my-0 px-4 2xl:px-0">
-          <h1 className="text-bold desktop:text-[80px] text-[60px] text-white font-cloverGroteskBlack">
+        <div className="flex flex-col flex-grow h-full max-w-[1222px] my-8 lg:my-0 px-4 2xl:px-0">
+          <h1 className="mb-4 text-center text-[40px] xl:text-left text-bold desktop:text-[65px] lg:text-[50px] text-[#001F6D] font-cloverGroteskBlack">
             COPA DAS TORCIDAS
           </h1>
-          <p className="desktop:text-[40px] text-[24px] text-white font-robotoRegular">
-            Foi dada a largada na <span className="font-bold font-robotoBold">COPA DAS TORCIDAS</span>, que vai em busca da torcida
-            mais apaixonada para premiar somente os de fé da Várzea!
+          <p className="desktop:text-[33px] text-[24px] text-[#001F6D] font-robotoRegular text-justify">
+            Foi dada a largada na{" "}
+            <span className="font-bold font-robotoBold">COPA DAS TORCIDAS</span>
+            , que vai em busca da torcida mais apaixonada para premiar somente
+            os de fé da Várzea!
           </p>
           <br />
-          <p className="font-robotoRegular text-[24px] text-white">
+          <p className="font-robotoRegular text-[24px] text-[#001F6D] text-justify">
             Como a Esportes da Sorte não deixa a brincadeira ficar chata para
             ninguém, a procura pela torcida com o grito mais forte vai vir
             acompanhada de premiações semanais, com bancas na plataforma
@@ -34,13 +49,13 @@ export default function Home() {
         </div>
       </div>
       <Image
-        src={"/bannerclubedasorte.png"}
+        src={bannerSrc}
         alt="banner eds"
         width={1640}
         height={276}
         quality={100}
         priority={true}
-        className="mx-auto mb-8 lg:mb-0 h-[250px] w-[1640px]"
+        className="mx-auto mb-8 lg:mb-0 h-[210px] w-[85%]"
       />
     </main>
   );
