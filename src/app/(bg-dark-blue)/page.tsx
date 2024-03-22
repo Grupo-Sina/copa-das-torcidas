@@ -27,17 +27,17 @@ export default function Home() {
           className="w-[168px] h-[180px] xl:h-[321px] xl:w-[287px]"
         />
         <div className="flex flex-col flex-grow h-full max-w-[1222px] my-8 lg:my-0 px-4 2xl:px-0">
-          <h1 className="mb-4 text-center text-[40px] xl:text-left text-bold desktop:text-[65px] lg:text-[50px] text-[#001F6D] font-cloverGroteskBlack">
+          <h1 className="text-shadow mb-4 text-center text-[32px] xl:text-left text-bold desktop:text-[65px] lg:text-[50px] text-[#001F6D] font-cloverGroteskBlack">
             COPA DAS TORCIDAS
           </h1>
-          <p className="desktop:text-[33px] text-[24px] text-[#001F6D] font-robotoRegular text-justify">
+          <p className="desktop:text-[33px] text-[18px] text-[#001F6D] font-robotoRegular text-justify">
             Foi dada a largada na{" "}
             <span className="font-bold font-robotoBold">COPA DAS TORCIDAS</span>
             , que vai em busca da torcida mais apaixonada para premiar somente
             os de fé da Várzea!
           </p>
           <br />
-          <p className="font-robotoRegular text-[24px] text-[#001F6D] text-justify">
+          <p className="font-robotoRegular text-[18px] text-[#001F6D] text-justify">
             Como a Esportes da Sorte não deixa a brincadeira ficar chata para
             ninguém, a procura pela torcida com o grito mais forte vai vir
             acompanhada de premiações semanais, com bancas na plataforma

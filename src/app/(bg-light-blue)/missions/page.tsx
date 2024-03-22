@@ -9,7 +9,7 @@ export default function Missions() {
   return (
     <main className="w-full flex justify-around items-center flex-col lg:flex-row flex-wrap  pb-10">
       <div className="lg:px-8 px-4 lg:w-[805px] w-full">
-        <h1 className="lg:ml-7 font-cloverGroteskBlackRegular text-white lg:text-[56px] text-[32px] lg:text-start text-center font-bold  mt-[32px] mb-[24px] lg:my-4">
+        <h1 className="text-shadow lg:ml-7 font-cloverGroteskBlackRegular text-white lg:text-[56px] text-[32px] lg:text-start text-center font-bold  mt-[32px] mb-[24px] lg:my-4">
           MISSÕES ATIVAS
         </h1>
         <Accordion

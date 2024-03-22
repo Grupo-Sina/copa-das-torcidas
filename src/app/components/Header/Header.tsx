@@ -52,7 +52,7 @@ export default function Header() {
         <NavbarMenuItem className="mt-10 relative overflow-hidden">
           <Link
             href="/"
-            className="cursor-pointer text-xl font-robotoBold text-white rounded-full w-full p-4"
+            className="cursor-pointer text-xl font-robotoBold hover:text-[#00E46F] text-white rounded-full w-full p-4"
           >
             Início
           </Link>
@@ -66,7 +66,7 @@ export default function Header() {
         <NavbarMenuItem>
           <Link
             href="/about"
-            className="cursor-pointer text-xl font-robotoBold text-white rounded-full w-full p-4"
+            className="cursor-pointer text-xl font-robotoBold hover:text-[#00E46F] text-white rounded-full w-full p-4"
           >
             Sobre
           </Link>
@@ -79,7 +79,7 @@ export default function Header() {
         <NavbarMenuItem>
           <Link
             href="/missions"
-            className="cursor-pointer text-xl font-robotoBold text-white rounded-full w-full p-4"
+            className="cursor-pointer text-xl font-robotoBold hover:text-[#00E46F] text-white rounded-full w-full p-4"
           >
             Missões
           </Link>
@@ -92,7 +92,7 @@ export default function Header() {
         <NavbarMenuItem>
           <Link
             href="/teams"
-            className="cursor-pointer text-xl font-robotoBold text-white rounded-full w-full p-4"
+            className="cursor-pointer text-xl font-robotoBold hover:text-[#00E46F] text-white rounded-full w-full p-4"
           >
             Times
           </Link>
@@ -105,7 +105,7 @@ export default function Header() {
         <NavbarMenuItem>
           <Link
             href="/ranking"
-            className="cursor-pointer text-xl font-robotoBold text-white rounded-full w-full p-4"
+            className="cursor-pointer text-xl font-robotoBold hover:text-[#00E46F] text-white rounded-full w-full p-4"
           >
             Ranking
           </Link>
@@ -118,7 +118,7 @@ export default function Header() {
         <NavbarMenuItem>
           <Link
             href="/faq"
-            className="cursor-pointer text-xl font-robotoBold text-white rounded-full w-full p-4"
+            className="cursor-pointer text-xl font-robotoBold hover:text-[#00E46F] text-white rounded-full w-full p-4"
           >
             FAQ
           </Link>
@@ -131,7 +131,7 @@ export default function Header() {
         <NavbarMenuItem>
           <Link
             href="/"
-            className="cursor-pointer text-xl font-robotoBold text-white rounded-full w-full p-4"
+            className="cursor-pointer text-xl font-robotoBold hover:text-[#00E46F] text-white rounded-full w-full p-4"
           >
             Tutoriais
           </Link>
