@@ -1,126 +1,60 @@
 'use client'
 
-import { Accordion, AccordionItem, Button, Divider } from '@nextui-org/react'
+import { missions } from '@/utils/missions-items'
+import { Accordion, AccordionItem, Button } from '@nextui-org/react'
 import Image from 'next/image'
 import React from 'react'
 
 export default function Missions() {
   return (
-    <main className="w-full flex justify-around items-center flex-wrap">
-      <div className="px-8">
-        <h1 className="font-cloverGroteskBlackRegular text-white text-[56px] font-bold my-4">
+    <main className="w-full flex justify-around items-center flex-col lg:flex-row flex-wrap  pb-10">
+      <div className="lg:px-8 px-4 lg:w-[805px] w-full">
+        <h1 className="lg:ml-7 font-cloverGroteskBlackRegular text-white lg:text-[56px] text-[32px] lg:text-start text-center font-bold  mt-[32px] mb-[24px] lg:my-4">
           MISSÕES ATIVAS
         </h1>
         <Accordion
           defaultExpandedKeys={['1']}
-          className="bg-[#001F6D] text-white lg:w-[805px] p-6 rounded-xl"
+          className="text-white lg:w-[805px] w-full lg:p-6 pb-6 rounded-xl"
+          variant="splitted"
+          fullWidth
         >
-          <AccordionItem
-            key="1"
-            aria-label="MISSÕES NÍVEL 1"
-            title="MISSÕES NÍVEL 1"
-            startContent={
-              <div className="bg-[#0038C1] w-[24px] h-[24px] rounded-full font-robotoRegular text-[16px]">
-                1
-              </div>
-            }
-            classNames={{
-              subtitle: 'bg-white',
-              title: 'text-white font-robotoRegular',
-            }}
-          >
-            <p className="text-white font-robotoRegular text-[18px]">
-              Valem{' '}
-              <span className="text-[#00E46F] font-robotoRegularBold font-bold text-[18px]">
-                10 Pontos
-              </span>{' '}
-              (10P)
-            </p>
-            <br />
-            <p className="text-white text-[16px] font-robotoRegular">
-              Essas missões também terão como prêmio bancas de R$50,00 na
-              Esportes da Sorte. Essas "bancas" são valores que o ganhador
-              poderá usar no site da Esportes da Sorte.
-            </p>
-            <br />
-            <Button
-              radius="full"
-              size="md"
-              className="bg-[#00E46F] font-headingBold text-[18px] text-[#003B9C] py-3 px-8"
+          {missions.map((item) => (
+            <AccordionItem
+              key={item.id}
+              aria-label={item.title}
+              title={item.title}
+              startContent={
+                <div className="bg-[#0038C1] w-[24px] h-[24px] rounded-full font-robotoRegular text-[16px]">
+                  {item.id}
+                </div>
+              }
+              classNames={{
+                subtitle: 'bg-white',
+                title:
+                  'text-white font-robotoRegular lg:text-[24px] text-[18px] uppercase',
+              }}
             >
-              COMEÇAR
-            </Button>
-          </AccordionItem>
-          <AccordionItem
-            key="2"
-            aria-label="MISSÕES NÍVEL 2"
-            title="MISSÕES NÍVEL 2"
-            startContent={
-              <div className="bg-[#0038C1] w-[24px] h-[24px] rounded-full font-robotoRegular text-[16px]">
-                2
-              </div>
-            }
-            classNames={{
-              title: 'text-white font-robotoRegular',
-            }}
-          >
-            <p className="text-white font-robotoRegular text-[18px]">
-              Valem{' '}
-              <span className="text-[#00E46F] font-robotoRegularBold font-bold text-[18px]">
-                10 Pontos
-              </span>{' '}
-              (10P)
-            </p>
-            <br />
-            <p className="text-white text-[16px] font-robotoRegular">
-              Essas missões também terão como prêmio bancas de R$50,00 na
-              Esportes da Sorte. Essas "bancas" são valores que o ganhador
-              poderá usar no site da Esportes da Sorte.
-            </p>
-            <br />
-            <Button
-              radius="full"
-              size="md"
-              className="bg-[#00E46F] font-headingBold text-[18px] text-[#003B9C] py-3 px-8"
-            >
-              COMEÇAR
-            </Button>
-          </AccordionItem>
-          <AccordionItem
-            key="3"
-            aria-label="MISSÕES NÍVEL 3"
-            title="MISSÕES NÍVEL 3"
-            startContent={
-              <div className="bg-[#0038C1] w-[24px] h-[24px] rounded-full font-robotoRegular text-[16px]">
-                3
-              </div>
-            }
-            classNames={{
-              title: 'text-white font-robotoRegular',
-            }}
-          >
-            <p className="text-white font-robotoRegular text-[18px]">
-              Valem{' '}
-              <span className="text-[#00E46F] font-robotoRegularBold font-bold text-[18px]">
-                10 Pontos
-              </span>{' '}
-              (10P)
-            </p>
-            <br />
-            <p className="text-white text-[16px] font-robotoRegular">
-              Essas missões também terão como prêmio bancas de R$50,00 na
-              Esportes da Sorte. Essas "bancas" são valores que o ganhador
-              poderá usar no site da Esportes da Sorte.
-            </p>
-            <br />
-            <Button
-              radius="full"
-              size="md"
-              className="bg-[#00E46F] font-headingBold text-[18px] text-[#003B9C] py-3 px-8"
-            >
-              COMEÇAR
-            </Button>
-          </AccordionItem>
+              <p className="text-white font-robotoRegular text-[18px]">
+                Valem{' '}
+                <span className="text-[#00E46F] font-robotoRegularBold font-bold lg:text-[18px] text-[16px]">
+                  {item.points} Pontos
+                </span>{' '}
+                ({item.points}P)
+              </p>
+              <br />
+              <p className="text-white lg:text-[16px] text-[14px] font-robotoRegular">
+                {item.description}
+              </p>
+              <br />
+              <Button
+                radius="full"
+                size="md"
+                className="bg-[#00E46F] font-headingBold text-[18px] text-[#003B9C] py-3 px-8"
+              >
+                COMEÇAR
+              </Button>
+            </AccordionItem>
+          ))}
         </Accordion>
       </div>
 
@@ -131,7 +65,17 @@ export default function Missions() {
         height={476}
         quality={100}
         priority={true}
-        className="h-[452px] w-[603px]"
+        className="h-[452px] w-[603px] hidden lg:flex"
+      />
+
+      <Image
+        src={'/escudocopadastorcidas.png'}
+        alt="escudo copa das torcidas"
+        width={100}
+        height={100}
+        quality={100}
+        priority={true}
+        className="lg:hidden flex"
       />
     </main>
   )
