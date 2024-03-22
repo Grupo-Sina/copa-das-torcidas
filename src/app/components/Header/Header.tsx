@@ -1,4 +1,4 @@
-"use client";
+'use client'
 
 import {
   Button,
@@ -11,21 +11,21 @@ import {
   NavbarMenuItem,
   NavbarMenuToggle,
   useDisclosure,
-} from "@nextui-org/react";
-import Image from "next/image";
-import logoedsheader from "../../../../public/logoedsheader.png";
-import { SetStateAction, useEffect, useState } from "react";
-import { useRouter } from "next/router";
-import { usePathname } from "next/navigation";
+} from '@nextui-org/react'
+import Image from 'next/image'
+import logoedsheader from '../../../../public/logoedsheader.png'
+import { SetStateAction, useEffect, useState } from 'react'
+import { useRouter } from 'next/router'
+import { usePathname } from 'next/navigation'
 
 export default function Header() {
-  const pathname = usePathname();
+  const pathname = usePathname()
 
-  const [activePathname, setActivePathname] = useState<string>(pathname);
+  const [activePathname, setActivePathname] = useState<string>(pathname)
 
-  const { isOpen, onOpen, onOpenChange } = useDisclosure();
+  const { isOpen, onOpen, onOpenChange } = useDisclosure()
 
-  const [isMenuOpen, setIsMenuOpen] = useState<boolean>(false);
+  const [isMenuOpen, setIsMenuOpen] = useState<boolean>(false)
 
   return (
     <Navbar
@@ -34,11 +34,11 @@ export default function Header() {
       className="h-[93px] bg-[#0F1768] w-screen flex justify-between"
       position="static"
       classNames={{
-        wrapper: "justify-center",
+        wrapper: 'justify-center',
       }}
     >
       <NavbarMenuToggle
-        aria-label={isMenuOpen ? "Close menu" : "Open menu"}
+        aria-label={isMenuOpen ? 'Close menu' : 'Open menu'}
         className="md:hidden bg-transparent text-white mx-2"
       />
 
@@ -58,7 +58,7 @@ export default function Header() {
           </Link>
           <hr
             style={{
-              borderTopColor: "rgba(255, 255, 255, 0.20)",
+              borderTopColor: 'rgba(255, 255, 255, 0.20)',
             }}
           />
           <span className="absolute bg-[#00E46F] h-[4px] bottom-0 left-0 right-0 transform scale-x-0 origin-left transition-transform duration-300 ease-out group-hover:scale-x-100"></span>
@@ -72,7 +72,7 @@ export default function Header() {
           </Link>
           <hr
             style={{
-              borderTopColor: "rgba(255, 255, 255, 0.20)",
+              borderTopColor: 'rgba(255, 255, 255, 0.20)',
             }}
           />
         </NavbarMenuItem>
@@ -85,7 +85,7 @@ export default function Header() {
           </Link>
           <hr
             style={{
-              borderTopColor: "rgba(255, 255, 255, 0.20)",
+              borderTopColor: 'rgba(255, 255, 255, 0.20)',
             }}
           />
         </NavbarMenuItem>
@@ -98,7 +98,7 @@ export default function Header() {
           </Link>
           <hr
             style={{
-              borderTopColor: "rgba(255, 255, 255, 0.20)",
+              borderTopColor: 'rgba(255, 255, 255, 0.20)',
             }}
           />
         </NavbarMenuItem>
@@ -111,7 +111,7 @@ export default function Header() {
           </Link>
           <hr
             style={{
-              borderTopColor: "rgba(255, 255, 255, 0.20)",
+              borderTopColor: 'rgba(255, 255, 255, 0.20)',
             }}
           />
         </NavbarMenuItem>
@@ -124,7 +124,7 @@ export default function Header() {
           </Link>
           <hr
             style={{
-              borderTopColor: "rgba(255, 255, 255, 0.20)",
+              borderTopColor: 'rgba(255, 255, 255, 0.20)',
             }}
           />
         </NavbarMenuItem>
@@ -137,7 +137,7 @@ export default function Header() {
           </Link>
           <hr
             style={{
-              borderTopColor: "rgba(255, 255, 255, 0.20)",
+              borderTopColor: 'rgba(255, 255, 255, 0.20)',
             }}
           />
         </NavbarMenuItem>
@@ -147,7 +147,7 @@ export default function Header() {
         <NavbarItem>
           <Link
             href="/"
-            className={`${activePathname === "/" ? 'text-[#00E46F]' : 'text-white'} font-robotoRegular`}
+            className={`${activePathname === '/' ? 'text-[#00E46F]' : 'text-white'} font-robotoRegular`}
           >
             Início
           </Link>
@@ -155,15 +155,15 @@ export default function Header() {
         <NavbarItem>
           <Link
             href="/about"
-            className={`${activePathname === "/about" ? 'text-[#00E46F]' : 'text-white'} font-robotoRegular`}
+            className={`${activePathname === '/about' ? 'text-[#00E46F]' : 'text-white'} font-robotoRegular`}
           >
             Sobre
           </Link>
         </NavbarItem>
         <NavbarItem>
-          <Link            
+          <Link
             href="/missions"
-            className={`${activePathname === "/missions" ? 'text-[#00E46F]' : 'text-white'} font-robotoRegular`}
+            className={`${activePathname === '/missions' ? 'text-[#00E46F]' : 'text-white'} font-robotoRegular`}
           >
             Missões
           </Link>
@@ -171,7 +171,7 @@ export default function Header() {
         <NavbarItem>
           <Link
             href="/teams"
-            className={`${activePathname === "/teams" ? 'text-[#00E46F]' : 'text-white'} font-robotoRegular`}
+            className={`${activePathname === '/teams' ? 'text-[#00E46F]' : 'text-white'} font-robotoRegular`}
           >
             Times
           </Link>
@@ -179,7 +179,7 @@ export default function Header() {
         <NavbarItem>
           <Link
             href="/ranking"
-            className={`${activePathname === "/ranking" ? 'text-[#00E46F]' : 'text-white'} font-robotoRegular`}
+            className={`${activePathname === '/ranking' ? 'text-[#00E46F]' : 'text-white'} font-robotoRegular`}
           >
             Ranking
           </Link>
@@ -187,7 +187,7 @@ export default function Header() {
         <NavbarItem>
           <Link
             href="/faq"
-            className={`${activePathname === "/faq" ? 'text-[#00E46F]' : 'text-white'} font-robotoRegular`}
+            className={`${activePathname === '/faq' ? 'text-[#00E46F]' : 'text-white'} font-robotoRegular`}
           >
             FAQ
           </Link>
@@ -213,5 +213,5 @@ export default function Header() {
         </NavbarItem>
       </NavbarContent>
     </Navbar>
-  );
+  )
 }

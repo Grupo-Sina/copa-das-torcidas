@@ -1,15 +1,15 @@
-"use client";
+'use client'
 
-import useWindowWidth from "@/utils/window-width-hook";
-import Image from "next/image";
+import useWindowWidth from '@/utils/window-width-hook'
+import Image from 'next/image'
 
 export default function Home() {
-  const windowWidth = useWindowWidth();
+  const windowWidth = useWindowWidth()
 
   const bannerSrc =
     windowWidth && windowWidth < 768
-      ? "/mobile-bannerclubedasorte.png"
-      : "/bannerclubedasorte.png";
+      ? '/mobile-bannerclubedasorte.png'
+      : '/bannerclubedasorte.png'
 
   return (
     <main className="flex-1 flex flex-col items-center justify-evenly overflow-auto p-8 gap-5">
@@ -18,7 +18,7 @@ export default function Home() {
         style={{ backgroundImage: "url('/lightbgdiv.png')" }}
       >
         <Image
-          src={"/escudocopadastorcidas.png"}
+          src={'/escudocopadastorcidas.png'}
           alt="escudo copa das torcidas"
           width={337}
           height={361}
@@ -31,7 +31,7 @@ export default function Home() {
             COPA DAS TORCIDAS
           </h1>
           <p className="desktop:text-[33px] text-[18px] text-[#001F6D] font-robotoRegular text-justify">
-            Foi dada a largada na{" "}
+            Foi dada a largada na{' '}
             <span className="font-bold font-robotoBold">COPA DAS TORCIDAS</span>
             , que vai em busca da torcida mais apaixonada para premiar somente
             os de fé da Várzea!
@@ -58,5 +58,5 @@ export default function Home() {
         className="mx-auto mb-8 lg:mb-0 h-[210px] w-[85%]"
       />
     </main>
-  );
+  )
 }

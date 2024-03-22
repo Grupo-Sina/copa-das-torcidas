@@ -1,40 +1,40 @@
-import { Modal, ModalBody, ModalContent, ModalHeader } from "@nextui-org/react";
-import Image from "next/image";
+import { Modal, ModalBody, ModalContent, ModalHeader } from '@nextui-org/react'
+import Image from 'next/image'
 
 interface CustomModalProps {
-  isOpen: boolean;
-  onClose: () => void;
+  isOpen: boolean
+  onClose: () => void
 }
 
 const RankingModal: React.FC<CustomModalProps> = ({ isOpen, onClose }) => {
   const mockTeams = [
     {
-      teamName: "Scorpions",
+      teamName: 'Scorpions',
       totalPoints: 120,
     },
     {
-      teamName: "Bears",
+      teamName: 'Bears',
       totalPoints: 50,
     },
     {
-      teamName: "Wolves",
+      teamName: 'Wolves',
       totalPoints: 30,
     },
-  ];
+  ]
 
   const handleRenderLastItem = (index: number) => {
     if (index === mockTeams.length - 1) {
-      return null;
+      return null
     } else {
       return (
         <hr
           style={{
-            borderTopColor: "rgba(255, 255, 255, 0.20)",
+            borderTopColor: 'rgba(255, 255, 255, 0.20)',
           }}
         />
-      );
+      )
     }
-  };
+  }
 
   return (
     <Modal
@@ -49,7 +49,7 @@ const RankingModal: React.FC<CustomModalProps> = ({ isOpen, onClose }) => {
             <ModalHeader className="flex flex-col">
               <div className="flex gap-3">
                 <Image
-                  src={"/littletrophyicon.png"}
+                  src={'/littletrophyicon.png'}
                   alt="trophy icon"
                   width={28}
                   height={28}
@@ -77,7 +77,7 @@ const RankingModal: React.FC<CustomModalProps> = ({ isOpen, onClose }) => {
               </div>
               <hr
                 style={{
-                  borderTopColor: "rgba(255, 255, 255, 0.20)",
+                  borderTopColor: 'rgba(255, 255, 255, 0.20)',
                 }}
               />
               <ul>
@@ -86,7 +86,7 @@ const RankingModal: React.FC<CustomModalProps> = ({ isOpen, onClose }) => {
                     <li className="text-white py-2 font-robotoRegular text-[14px] flex justify-between">
                       <p>
                         {index + 1}. {team.teamName}
-                      </p>{" "}
+                      </p>{' '}
                       <p>{team.totalPoints}</p>
                     </li>
                     {handleRenderLastItem(index)}
@@ -98,7 +98,7 @@ const RankingModal: React.FC<CustomModalProps> = ({ isOpen, onClose }) => {
         )}
       </ModalContent>
     </Modal>
-  );
-};
+  )
+}
 
-export default RankingModal;
+export default RankingModal

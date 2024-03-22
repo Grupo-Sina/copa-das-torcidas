@@ -1,17 +1,17 @@
-"use client";
+'use client'
 
-import RankingModal from "@/app/components/RankingModal/RankingModal";
-import { Button, useDisclosure } from "@nextui-org/react";
-import Image from "next/image";
+import RankingModal from '@/app/components/RankingModal/RankingModal'
+import { Button, useDisclosure } from '@nextui-org/react'
+import Image from 'next/image'
 
 export default function Ranking() {
-  const { isOpen, onOpen, onOpenChange } = useDisclosure();
+  const { isOpen, onOpen, onOpenChange } = useDisclosure()
 
   return (
     <div className="flex items-center justify-start w-full">
       <div className="flex w-full justify-start gap-20 ml-24">
         <Image
-          src={"/escudocopadastorcidas.png"}
+          src={'/escudocopadastorcidas.png'}
           alt="escudo"
           width={345}
           height={369}
@@ -40,7 +40,7 @@ export default function Ranking() {
       </div>
       <RankingModal isOpen={isOpen} onClose={onOpenChange} />
       <Image
-        src={"/trophy.png"}
+        src={'/trophy.png'}
         alt="trophy"
         width={859}
         height={772}
@@ -49,7 +49,7 @@ export default function Ranking() {
         className="absolute hidden 2xl:block 2xl:bottom-[140px] 2xl:right-20"
       />
       <Image
-        src={"/grouptext.svg"}
+        src={'/grouptext.svg'}
         alt="copa das torcidas"
         width={120}
         height={56}
@@ -58,5 +58,5 @@ export default function Ranking() {
         className="absolute right-20"
       />
     </div>
-  );
+  )
 }

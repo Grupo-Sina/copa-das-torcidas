@@ -1,4 +1,4 @@
-const { nextui } = require('@nextui-org/react');
+const { nextui } = require('@nextui-org/react')
 
 /** @type {import('tailwindcss').Config} */
 module.exports = {
@@ -31,11 +31,9 @@ module.exports = {
         cloverGroteskBlack: ['Clover Grotesk Black', 'sans-serif'],
         cloverGroteskBlackLight: ['Clover Grotesk Light', 'sans-serif'],
         cloverGroteskBlackRegular: ['Clover Grotesk Regular', 'sans-serif'],
-        
       },
     },
   },
   darkMode: 'class',
   plugins: [nextui()],
 }
-
