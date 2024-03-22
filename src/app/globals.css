@@ -90,9 +90,7 @@ body,
   background-color: #001f6d !important;
 }
 
-
-
 * {
   scrollbar-width: thin;
-  scrollbar-color: #FFFFFF #001F6D;
+  scrollbar-color: #ffffff #001f6d;
 }

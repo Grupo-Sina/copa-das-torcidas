@@ -20,13 +20,13 @@ export default function Ranking() {
           className="h-[345px] w-[369px]"
         />
         <div className="z-20">
-          <h1 className="font-cloverGroteskBlackRegular text-white text-[45px] lg:text-[79px]">
+          <h1 className="text-shadow font-cloverGroteskBlackRegular text-white text-[45px] lg:text-[79px]">
             CONFIRA O
           </h1>
-          <h1 className="font-cloverGroteskBlackRegular text-white text-[55px] lg:text-[100px]">
+          <h1 className="text-shadow font-cloverGroteskBlackRegular text-white text-[55px] lg:text-[100px]">
             RANKING
           </h1>
-          <h1 className="font-cloverGroteskBlackRegular text-white text-[32px] lg:text-[56px]">
+          <h1 className="text-shadow font-cloverGroteskBlackRegular text-white text-[32px] lg:text-[56px]">
             DA PROMOÇÃO!
           </h1>
           <Button
