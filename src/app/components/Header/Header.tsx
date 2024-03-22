@@ -25,19 +25,19 @@ export default function Header() {
   return (
     <Navbar
       onMenuOpenChange={setIsMenuOpen}
-      maxWidth="2xl"
+      maxWidth="full"
       className="h-[93px] bg-[#0F1768] w-screen flex justify-between"
       position="static"
       classNames={{
-        wrapper: 'justify-center',
+        wrapper: 'justify-center md:justify-around',
       }}
     >
       <NavbarMenuToggle
         aria-label={isMenuOpen ? 'Close menu' : 'Open menu'}
-        className="md:hidden bg-transparent text-white mx-2"
+        className="miniMobile:absolute miniMobile:left-12 md:hidden justify-start bg-transparent text-white mx-2"
       />
 
-      <NavbarContent justify="start" className="flex">
+      <NavbarContent justify="center" className="flex">
         <Link href="/" className="mx-auto">
           <Image src={logoedsheader} alt="logoedsheader" />
         </Link>
@@ -123,7 +123,7 @@ export default function Header() {
             }}
           />
         </NavbarMenuItem>
-        <NavbarMenuItem>
+        {/* <NavbarMenuItem>
           <Link
             href="/"
             className="cursor-pointer text-xl font-robotoBold hover:text-[#00E46F] text-white rounded-full w-full p-4"
@@ -132,10 +132,10 @@ export default function Header() {
           </Link>
           <hr
             style={{
-              borderTopColor: 'rgba(255, 255, 255, 0.20)',
+              borderTopColor: "rgba(255, 255, 255, 0.20)",
             }}
           />
-        </NavbarMenuItem>
+        </NavbarMenuItem> */}
       </NavbarMenu>
 
       <NavbarContent className="hidden md:flex gap-4" justify="center">
@@ -196,7 +196,7 @@ export default function Header() {
           </Link>
         </NavbarItem> */}
       </NavbarContent>
-      <NavbarContent justify="end" className="hidden md:flex">
+      <NavbarContent justify="center" className="hidden md:flex ">
         <NavbarItem>
           <Button
             as={Link}

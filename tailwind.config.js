@@ -17,6 +17,7 @@ module.exports = {
     extend: {
       screens: {
         desktop: '1920px',
+        miniMobile: '470px',
       },
       fontFamily: {
         headingExtraLight: ['Heading Pro Trial Extra Light', 'sans-serif'],
