@@ -12,7 +12,7 @@ export default function HomeLayout({
     <div className="flex flex-col bg-yellow w-screen min-h-screen">
       <Header />
       <div
-        className="flex flex-1 bg-no-repeat bg-center bg-cover object-cover"
+        className="flex flex-1 bg-no-repeat bg-center bg-cover object-cover "
         style={{ backgroundImage: "url('/darkbluebg.png')" }}
       >
         {children}

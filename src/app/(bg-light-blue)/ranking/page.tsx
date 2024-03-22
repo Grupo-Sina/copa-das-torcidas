@@ -8,8 +8,8 @@ export default function Ranking() {
   const { isOpen, onOpen, onOpenChange } = useDisclosure()
 
   return (
-    <div className="flex items-center justify-start w-full">
-      <div className="flex w-full justify-start gap-20 ml-24">
+    <div className="lg:flex flex-col items-center lg:justify-start justify-center w-full">
+      <div className="flex w-full lg:justify-start justify-center gap-20 lg:ml-24 items-center lg:h-full">
         <Image
           src={'/escudocopadastorcidas.png'}
           alt="escudo"
@@ -17,18 +17,19 @@ export default function Ranking() {
           height={369}
           quality={100}
           priority={true}
-          className="h-[345px] w-[369px]"
+          className="hidden lg:flex h-[345px] w-[369px]"
         />
-        <div className="z-20">
-          <h1 className="text-shadow font-cloverGroteskBlackRegular text-white text-[45px] lg:text-[79px]">
+        <div className="w-full flex flex-col lg:block items-center justify-center">
+          <p className="font-cloverGroteskBlackRegular  text-white text-[45px] lg:text-[79px]">
             CONFIRA O
-          </h1>
-          <h1 className="text-shadow font-cloverGroteskBlackRegular text-white text-[55px] lg:text-[100px]">
+          </p>
+
+          <p className="text-shadow font-cloverGroteskBlackRegular text-white text-[55px] lg:text-[100px]">
             RANKING
-          </h1>
-          <h1 className="text-shadow font-cloverGroteskBlackRegular text-white text-[32px] lg:text-[56px]">
+          </p>
+          <p className="text-shadow font-cloverGroteskBlackRegular text-white text-[32px] lg:text-[56px]">
             DA PROMOÇÃO!
-          </h1>
+          </p>
           <Button
             onPress={onOpen}
             radius="full"
@@ -40,14 +41,25 @@ export default function Ranking() {
       </div>
       <RankingModal isOpen={isOpen} onClose={onOpenChange} />
       <Image
-        src={'/trophy.png'}
+        src={'/trophy1.png'}
         alt="trophy"
-        width={859}
-        height={772}
+        width={616}
+        height={957}
         quality={100}
         priority={true}
-        className="absolute hidden 2xl:block 2xl:bottom-[140px] 2xl:right-20"
+        className="hidden 2xl:block 2xl:bottom-[10px] 2xl:right-20 absolute z-[1]"
       />
+      {/* <div className="overflow-x-hidden w-full">
+        <Image
+          src={'/trophy1.png'}
+          alt="trophy"
+          width={303}
+          height={470}
+          quality={100}
+          priority={true}
+          className="overflow-x-hidden lg:hidden block right-[-90px] absolute z-[1] bottom-[-60px]"
+        />
+      </div> */}
       <Image
         src={'/grouptext.svg'}
         alt="copa das torcidas"
@@ -55,8 +67,19 @@ export default function Ranking() {
         height={56}
         quality={100}
         priority={true}
-        className="absolute right-20"
+        className="lg:flex hidden absolute right-20 center-absolute-y"
       />
+      <div className="lg:hidden w-full flex items-center justify-center h-[250px] static z-[40px]">
+        <Image
+          src={'/grouplogotext.png'}
+          alt="copa das torcidas"
+          width={250}
+          height={115}
+          quality={100}
+          priority={true}
+          className="flex lg:hidden z-[2]"
+        />
+      </div>
     </div>
   )
 }

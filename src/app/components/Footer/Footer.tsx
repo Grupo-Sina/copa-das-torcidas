@@ -7,7 +7,7 @@ import { Link } from '@nextui-org/react'
 
 export default function Footer() {
   return (
-    <footer className="h-[140px] w-screen bg-[#0F1768] flex flex-col md:flex-row items-center justify-around">
+    <footer className="h-[140px] w-screen bg-[#0F1768] flex flex-col md:flex-row items-center justify-around static z-[40]">
       <Image src={logoedsfooter} alt="logoedsfooter" className="h-[28px]" />
       <p className="font-robotoRegular text-white">
         @2024 Copyright - Esportedasorte
