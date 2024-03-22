@@ -13,7 +13,7 @@ export default function Home() {
       : '/bannerclubedasorte.png'
 
   return (
-    <main className="flex-1 flex flex-col items-center justify-evenly overflow-auto lg:p-8 py-8 px-2 gap-5">
+    <main className="w-full flex-1 flex flex-col items-center justify-evenly overflow-auto lg:p-8 py-8 px-2 gap-5">
       <div
         className="overflow-hidden flex flex-col lg:flex-row items-center justify-center 2xl:gap-16 bg-white w-[85%] p-4 px-4 rounded-xl h-auto"
         style={{ backgroundImage: "url('/lightbgdiv.png')" }}
@@ -51,7 +51,7 @@ export default function Home() {
         </div>
       </div>
       <Link
-        className="w-full"
+        className="w-[85%] rounded-lg"
         href="https://m.esportesdasorte.com/ptb/pages/clube_eds"
         target="_blank"
         rel="noreferrer"
@@ -63,7 +63,7 @@ export default function Home() {
           height={276}
           quality={100}
           priority={true}
-          className="mx-auto mb-8 lg:mb-0 h-[210px] w-[85%]"
+          className="mx-auto mb-8 lg:mb-0 h-[210px] w-[100%]"
         />
       </Link>
     </main>
