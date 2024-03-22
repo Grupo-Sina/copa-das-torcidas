@@ -200,6 +200,9 @@ export default function Header() {
         <NavbarItem>
           <Button
             as={Link}
+            href="https://m.esportesdasorte.com/ptb/authentication/signup"
+            target="_blank"
+            rel="noopener noreferrer"
             radius="full"
             className="bg-[#00E46F] text-[#003B9C] hidden md:flex py-3 px-8 font-headingBold text-[16px]"
           >

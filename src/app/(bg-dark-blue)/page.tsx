@@ -1,6 +1,7 @@
 'use client'
 
 import useWindowWidth from '@/utils/window-width-hook'
+import { Link } from '@nextui-org/react'
 import Image from 'next/image'
 
 export default function Home() {
@@ -49,15 +50,22 @@ export default function Home() {
           </p>
         </div>
       </div>
-      <Image
-        src={bannerSrc}
-        alt="banner eds"
-        width={1640}
-        height={276}
-        quality={100}
-        priority={true}
-        className="mx-auto mb-8 lg:mb-0 h-[210px] w-[85%]"
-      />
+      <Link
+        className="w-full"
+        href="https://m.esportesdasorte.com/ptb/pages/clube_eds"
+        target="_blank"
+        rel="noreferrer"
+      >
+        <Image
+          src={bannerSrc}
+          alt="banner eds"
+          width={1640}
+          height={276}
+          quality={100}
+          priority={true}
+          className="mx-auto mb-8 lg:mb-0 h-[210px] w-[85%]"
+        />
+      </Link>
     </main>
   )
 }
