@@ -1,10 +1,13 @@
+/* eslint-disable react/no-unescaped-entities */
 import Image from 'next/image'
 
 export default function About() {
   return (
+
     <div className="flex flex-col lg:flex-row justify-center items-center lg:justify-evenly w-full h-auto relative overflow-x-hidden">
       <div className="flex flex-col w-full z-10 lg:p-16">
         <h1 className="my-4 lg:mb-0 font-cloverGroteskBlackRegular text-center text-[32px] lg:text-left text-[#001F6D] lg:text-[56px] text-shadow">
+
           SOBRE
         </h1>
         <p className="px-8 lg:px-0 text-justify text-[18px] lg:text-[28px] text-[#001F6D] font-robotoRegular">

@@ -66,6 +66,8 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  scrollbar-width: "thin";
+  scrollbar-color: "#FFFFFF #001F6D";
 }
 
 html,
@@ -86,4 +88,11 @@ body,
 
 .group-\[\.is-splitted\]\:bg-content1 {
   background-color: #001f6d !important;
+}
+
+
+
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #FFFFFF #001F6D;
 }

@@ -44,7 +44,7 @@ const RankingModal: React.FC<CustomModalProps> = ({ isOpen, onClose }) => {
       scrollBehavior="outside"
     >
       <ModalContent className="bg-[#001F6D] p-12">
-        {(onClose) => (
+        {() => (
           <>
             <ModalHeader className="flex flex-col">
               <div className="flex gap-3">

@@ -4,26 +4,21 @@ import {
   Button,
   Link,
   Navbar,
-  NavbarBrand,
   NavbarContent,
   NavbarItem,
   NavbarMenu,
   NavbarMenuItem,
   NavbarMenuToggle,
-  useDisclosure,
 } from '@nextui-org/react'
 import Image from 'next/image'
 import logoedsheader from '../../../../public/logoedsheader.png'
-import { SetStateAction, useEffect, useState } from 'react'
-import { useRouter } from 'next/router'
+import { useState } from 'react'
 import { usePathname } from 'next/navigation'
 
 export default function Header() {
   const pathname = usePathname()
 
-  const [activePathname, setActivePathname] = useState<string>(pathname)
-
-  const { isOpen, onOpen, onOpenChange } = useDisclosure()
+  const [activePathname] = useState<string>(pathname)
 
   const [isMenuOpen, setIsMenuOpen] = useState<boolean>(false)
 
