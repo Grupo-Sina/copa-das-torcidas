@@ -14,7 +14,7 @@ export default function Home() {
   return (
     <main className="flex-1 flex flex-col items-center justify-evenly overflow-auto p-8 gap-5">
       <div
-        className="overflow-hidden flex flex-col lg:flex-row items-center justify-center gap-4 2xl:gap-16 bg-white w-[85%] p-4 px-4 rounded-xl h-auto"
+        className="overflow-hidden flex flex-col lg:flex-row items-center justify-center 2xl:gap-16 bg-white w-[85%] p-4 px-4 rounded-xl h-auto"
         style={{ backgroundImage: "url('/lightbgdiv.png')" }}
       >
         <Image
