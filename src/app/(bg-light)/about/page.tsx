@@ -1,8 +1,9 @@
+/* eslint-disable react/no-unescaped-entities */
 import Image from 'next/image'
 
 export default function About() {
   return (
-    <div className="flex items-center justify-evenly w-full relative">
+    <main className="flex items-center justify-evenly w-full relative">
       <div className="flex flex-col w-[1160px] z-10 p-16">
         <h1 className="font-cloverGroteskBlackRegular text-[#001F6D] text-[56px]">
           SOBRE
@@ -33,6 +34,6 @@ export default function About() {
         priority={true}
         className="mr-[-10%]"
       />
-    </div>
+    </main>
   )
 }
