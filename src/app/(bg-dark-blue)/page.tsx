@@ -1,24 +1,24 @@
-"use client";
+'use client'
 
-import useWindowWidth from "@/utils/window-width-hook";
-import Image from "next/image";
+import useWindowWidth from '@/utils/window-width-hook'
+import Image from 'next/image'
 
 export default function Home() {
-  const windowWidth = useWindowWidth();
+  const windowWidth = useWindowWidth()
 
   const bannerSrc =
     windowWidth && windowWidth < 768
-      ? "/mobile-bannerclubedasorte.png"
-      : "/bannerclubedasorte.png";
+      ? '/mobile-bannerclubedasorte.png'
+      : '/bannerclubedasorte.png'
 
   return (
-    <main className="flex-1 flex flex-col items-center justify-evenly overflow-auto p-8 gap-5">
+    <main className="flex-1 flex flex-col items-center justify-evenly overflow-auto lg:p-8 py-8 px-2 gap-5">
       <div
         className="overflow-hidden flex flex-col lg:flex-row items-center justify-center 2xl:gap-16 bg-white w-[85%] p-4 px-4 rounded-xl h-auto"
         style={{ backgroundImage: "url('/lightbgdiv.png')" }}
       >
         <Image
-          src={"/escudocopadastorcidas.png"}
+          src={'/escudocopadastorcidas.png'}
           alt="escudo copa das torcidas"
           width={337}
           height={361}
@@ -30,6 +30,7 @@ export default function Home() {
           <h1 className="text-shadow mb-4 text-center text-[32px] xl:text-left text-bold desktop:text-[65px] lg:text-[50px] text-[#001F6D] font-cloverGroteskBlack">
             COPA DAS TORCIDAS
           </h1>
+
           <p className="desktop:text-[33px] text-[18px] text-[#001F6D] font-robotoRegular text-justify">
             Foi dada a largada na{" "}
             <span className="font-bold font-robotoBold">COPA DAS TORCIDAS</span>
@@ -43,7 +44,7 @@ export default function Home() {
             acompanhada de premiações semanais, com bancas na plataforma
             oficial, espaços vips para as torcidas em dia de eventos, brindes
             personalizados e o seu time ainda vai poder lutar pelo grande
-            prêmio!  Assim, a corrida até o título fica ainda mais emocionante
+            prêmio! Assim, a corrida até o título fica ainda mais emocionante
             para você!
           </p>
         </div>
@@ -58,5 +59,5 @@ export default function Home() {
         className="mx-auto mb-8 lg:mb-0 h-[210px] w-[85%]"
       />
     </main>
-  );
+  )
 }
