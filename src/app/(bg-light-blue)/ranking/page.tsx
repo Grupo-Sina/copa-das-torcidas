@@ -20,19 +20,19 @@ export default function Ranking() {
           className="h-[345px] w-[369px]"
         />
         <div className="z-20">
-          <h1 className="font-cloverGroteskBlackRegular text-white text-[79px]">
+          <h1 className="font-cloverGroteskBlackRegular text-white text-[45px] lg:text-[79px]">
             CONFIRA O
           </h1>
-          <h1 className="font-cloverGroteskBlackRegular text-white text-[100px]">
+          <h1 className="font-cloverGroteskBlackRegular text-white text-[55px] lg:text-[100px]">
             RANKING
           </h1>
-          <h1 className="font-cloverGroteskBlackRegular text-white text-[56px]">
+          <h1 className="font-cloverGroteskBlackRegular text-white text-[32px] lg:text-[56px]">
             DA PROMOÇÃO!
           </h1>
           <Button
             onPress={onOpen}
             radius="full"
-            className="my-4 bg-[#00E46F] text-[#003B9C] text-[24px] font-headingBold py-3 px-8"
+            className="my-4 bg-[#00E46F] text-[#003B9C] text-[18px] lg:text-[24px] font-headingBold py-3 px-8"
           >
             VER RANKING
           </Button>
@@ -46,7 +46,7 @@ export default function Ranking() {
         height={772}
         quality={100}
         priority={true}
-        className=" bottom-[140px] right-20 absolute hidden 2xl:block"
+        className="absolute hidden 2xl:block 2xl:bottom-[140px] 2xl:right-20"
       />
       <Image
         src={"/grouptext.svg"}

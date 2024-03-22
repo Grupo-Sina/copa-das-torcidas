@@ -1,11 +1,5 @@
-import {
-  Button,
-  Modal,
-  ModalBody,
-  ModalContent,
-  ModalFooter,
-  ModalHeader,
-} from "@nextui-org/react";
+import { Modal, ModalBody, ModalContent, ModalHeader } from "@nextui-org/react";
+import Image from "next/image";
 
 interface CustomModalProps {
   isOpen: boolean;
@@ -13,6 +7,35 @@ interface CustomModalProps {
 }
 
 const RankingModal: React.FC<CustomModalProps> = ({ isOpen, onClose }) => {
+  const mockTeams = [
+    {
+      teamName: "Scorpions",
+      totalPoints: 120,
+    },
+    {
+      teamName: "Bears",
+      totalPoints: 50,
+    },
+    {
+      teamName: "Wolves",
+      totalPoints: 30,
+    },
+  ];
+
+  const handleRenderLastItem = (index: number) => {
+    if (index === mockTeams.length - 1) {
+      return null;
+    } else {
+      return (
+        <hr
+          style={{
+            borderTopColor: "rgba(255, 255, 255, 0.20)",
+          }}
+        />
+      );
+    }
+  };
+
   return (
     <Modal
       isOpen={isOpen}
@@ -20,42 +43,57 @@ const RankingModal: React.FC<CustomModalProps> = ({ isOpen, onClose }) => {
       size="4xl"
       scrollBehavior="outside"
     >
-      <ModalContent>
+      <ModalContent className="bg-[#001F6D] p-12">
         {(onClose) => (
           <>
-            <ModalHeader className="flex flex-col gap-1">
-              <h1 className="text-[24px] font-montserratBold text-white">
-                Confere como está o ranking até agora!
+            <ModalHeader className="flex flex-col">
+              <div className="flex gap-3">
+                <Image
+                  src={"/littletrophyicon.png"}
+                  alt="trophy icon"
+                  width={28}
+                  height={28}
+                  quality={100}
+                  priority={true}
+                />
+                <h1 className="text-[24px] font-robotoRegular text-white">
+                  Confere como está o ranking até agora!
+                </h1>
+              </div>
+              <h1 className="font-robotoRegular text-[12px] text-[#9E9E9E] mt-4">
+                Atualizado em: 22/03/2024 às 15:16:46
               </h1>
             </ModalHeader>
             <ModalBody>
               <div className="flex flex-col space-y-3">
                 <div className="flex justify-between">
                   <h1 className="text-white font-robotoRegular font-semibold text-[12px]">
-                    POSIÇÃO
+                    NOME DO TIME
                   </h1>
                   <h1 className="text-white font-robotoRegular font-semibold text-[12px]">
-                    NÚMERO DO TICKET
+                    PONTOS
                   </h1>
                 </div>
-
-                <hr
-                  style={{
-                    borderTopColor: "rgba(255, 255, 255, 0.20)",
-                  }}
-                />
               </div>
+              <hr
+                style={{
+                  borderTopColor: "rgba(255, 255, 255, 0.20)",
+                }}
+              />
+              <ul>
+                {mockTeams.map((team, index) => (
+                  <div key={team.teamName}>
+                    <li className="text-white py-2 font-robotoRegular text-[14px] flex justify-between">
+                      <p>
+                        {index + 1}. {team.teamName}
+                      </p>{" "}
+                      <p>{team.totalPoints}</p>
+                    </li>
+                    {handleRenderLastItem(index)}
+                  </div>
+                ))}
+              </ul>
             </ModalBody>
-            <ModalFooter>
-              <Button
-                onPress={onClose}
-                size="sm"
-                radius="full"
-                className="my-6 w-full bg-[#C89A3D] text-[#222222] py-3 px-8 font-headingBold text-[16px] hover:bg-black hover:text-white mx-auto md:mx-0"
-              >
-                VOLTAR
-              </Button>
-            </ModalFooter>
           </>
         )}
       </ModalContent>
