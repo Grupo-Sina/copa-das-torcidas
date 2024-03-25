@@ -33,7 +33,17 @@ export default function Missions() {
                 title:
                   'text-white font-robotoRegular lg:text-[24px] text-[18px] uppercase',
               }}
+              // className="p-3"
             >
+              <hr
+                style={{
+                  borderTopColor: 'white',
+                  opacity: '0.5',
+                  strokeWidth: '0.5px',
+                  marginTop: '-8px',
+                  marginBottom: '16px',
+                }}
+              />
               <p className="text-white font-robotoRegular text-[18px]">
                 Valem{' '}
                 <span className="text-[#00E46F] font-robotoRegularBold font-bold lg:text-[18px] text-[16px]">
@@ -49,7 +59,7 @@ export default function Missions() {
               <Button
                 radius="full"
                 size="md"
-                className="bg-[#00E46F] font-headingBold text-[18px] text-[#003B9C] py-3 px-8"
+                className="bg-[#00E46F] font-headingBold text-[18px] text-[#003B9C] py-3 px-8 mb-3"
               >
                 COMEÇAR
               </Button>
