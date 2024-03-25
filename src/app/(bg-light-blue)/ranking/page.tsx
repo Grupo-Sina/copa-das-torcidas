@@ -75,6 +75,7 @@ export default function Ranking() {
           height={193}
           quality={100}
           priority={true}
+          className="z-10"
         />
         <Image
           src={'/trophy1.png'}
@@ -83,7 +84,7 @@ export default function Ranking() {
           height={387}
           quality={100}
           priority
-          className="absolute right-[-160px] miniMobile:bottom-[-120px] bottom-[-180px]"
+          className="absolute right-[-160px] miniMobile:bottom-[-120px] bottom-[-80px]"
         />
       </div>
     </div>
