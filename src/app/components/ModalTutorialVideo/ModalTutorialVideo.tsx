@@ -16,7 +16,7 @@ export default function ModalTutorialVideo() {
           setModalVisible(undefined)
           setTutorialSelect(undefined)
         }}
-        className="bg-[#001F6D] max-w-[60%] h-[85%]"
+        className="bg-[#001F6D] lg:max-w-[60%] w-[90%] lg:h-[85%] h-[60%]"
       >
         <ModalContent>
           {() => (
