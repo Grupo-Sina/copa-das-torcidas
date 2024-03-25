@@ -1,17 +1,17 @@
-"use client";
+'use client'
 
-import RankingModal from "@/app/components/RankingModal/RankingModal";
-import { Button, useDisclosure } from "@nextui-org/react";
-import Image from "next/image";
+import RankingModal from '@/app/components/RankingModal/RankingModal'
+import { Button, useDisclosure } from '@nextui-org/react'
+import Image from 'next/image'
 
 export default function Ranking() {
-  const { isOpen, onOpen, onOpenChange } = useDisclosure();
+  const { isOpen, onOpen, onOpenChange } = useDisclosure()
 
   return (
     <div className="flex flex-col lg:flex-row items-center lg:justify-start justify-center gap-20 w-full overflow-hidden relative">
       <div className="flex w-full xl:justify-start justify-center gap-20 items-center lg:h-full lg:p-28">
         <Image
-          src={"/escudocopadastorcidas.png"}
+          src={'/escudocopadastorcidas.png'}
           alt="escudo"
           width={345}
           height={369}
@@ -39,7 +39,7 @@ export default function Ranking() {
           </Button>
         </div>
         <Image
-          src={"/grouptext.svg"}
+          src={'/grouptext.svg'}
           alt="copa das torcidas"
           width={120}
           height={56}
@@ -50,7 +50,7 @@ export default function Ranking() {
       </div>
       <RankingModal isOpen={isOpen} onClose={onOpenChange} />
       <Image
-        src={"/trophy1.png"}
+        src={'/trophy1.png'}
         alt="trophy"
         width={816}
         height={1057}
@@ -60,7 +60,7 @@ export default function Ranking() {
       />
       <div className="lg:hidden w-full flex items-center justify-center h-auto z-[40px] relative">
         <Image
-          src={"/grouptext2.png"}
+          src={'/grouptext2.png'}
           alt="copa das torcidas"
           width={66}
           height={232}
@@ -69,7 +69,7 @@ export default function Ranking() {
           className="absolute left-6"
         />
         <Image
-          src={"/escudocopadastorcidas.png"}
+          src={'/escudocopadastorcidas.png'}
           alt="escudo"
           width={181}
           height={193}
@@ -77,7 +77,7 @@ export default function Ranking() {
           priority={true}
         />
         <Image
-          src={"/trophy1.png"}
+          src={'/trophy1.png'}
           alt="trophy"
           width={419}
           height={387}
@@ -87,5 +87,5 @@ export default function Ranking() {
         />
       </div>
     </div>
-  );
+  )
 }
