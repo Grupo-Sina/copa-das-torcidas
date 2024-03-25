@@ -8,7 +8,7 @@ export default function About() {
         <h1 className="my-4 lg:mb-0 font-cloverGroteskBlackRegular text-center text-[32px] lg:text-left text-[#001F6D] lg:text-[56px] text-shadow">
           SOBRE
         </h1>
-        <p className="px-8 lg:px-0 text-justify text-[18px] lg:text-[28px] text-[#001F6D] font-robotoRegular">
+        <p className="px-8 lg:px-0 text-justify text-[18px] lg:text-[24px] desktop:text-[28px] text-[#001F6D] font-robotoRegular">
           Com realização da Esportes da Sorte, a Copa das Torcidas é um
           campeonato que promove uma disputa justa e saudável entre os maiores
           torcedores varzeanos. Para a alegria de todos e mostrando pra que
@@ -16,7 +16,7 @@ export default function About() {
           com todos os números claros.
         </p>
         <br />
-        <p className="px-8 lg:px-0 text-justify text-[18px] lg:text-[28px] text-[#001F6D] font-robotoRegular">
+        <p className="px-8 lg:px-0 text-justify text-[18px] lg:text-[24px] desktop:text-[28px] text-[#001F6D] font-robotoRegular">
           {' '}
           Na Copa das Torcidas, o time que estiver cadastrado pode começar a
           participar das "Missões da Sorte", que serão publicadas no Instagram

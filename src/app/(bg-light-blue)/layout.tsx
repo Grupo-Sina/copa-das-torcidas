@@ -9,10 +9,10 @@ export default function MissionsLayout({
   children: React.ReactNode
 }>) {
   return (
-    <div className="flex flex-col bg-yellow w-screen min-h-screen">
+    <div className="flex flex-col bg-yellow w-screen min-h-screen overflow-hidden">
       <Header />
       <div
-        className="flex flex-1 bg-no-repeat bg-center bg-cover object-cover"
+        className="flex flex-1 bg-no-repeat bg-center bg-cover object-cover overflow-hidden"
         style={{ backgroundImage: "url('/lightbluebg.png')" }}
       >
         {children}

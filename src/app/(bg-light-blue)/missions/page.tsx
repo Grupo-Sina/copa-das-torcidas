@@ -1,9 +1,9 @@
-'use client'
+"use client";
 
-import { missions } from '@/utils/missions-items'
-import { Accordion, AccordionItem, Button } from '@nextui-org/react'
-import Image from 'next/image'
-import React from 'react'
+import { missions } from "@/utils/missions-items";
+import { Accordion, AccordionItem, Button } from "@nextui-org/react";
+import Image from "next/image";
+import React from "react";
 
 export default function Missions() {
   return (
@@ -13,7 +13,7 @@ export default function Missions() {
           MISSÕES ATIVAS
         </h1>
         <Accordion
-          defaultExpandedKeys={['1']}
+          defaultExpandedKeys={["1"]}
           className="text-white lg:w-[805px] w-full lg:p-6 pb-6 rounded-xl"
           variant="splitted"
           fullWidth
@@ -29,16 +29,26 @@ export default function Missions() {
                 </div>
               }
               classNames={{
-                subtitle: 'bg-white',
+                subtitle: "bg-white",
                 title:
-                  'text-white font-robotoRegular lg:text-[24px] text-[18px] uppercase',
+                  "text-white font-robotoRegular lg:text-[24px] text-[18px] uppercase",
               }}
+              // className="p-3"
             >
+              <hr
+                style={{
+                  borderTopColor: "white",
+                  opacity: "0.5",
+                  strokeWidth: "0.5px",
+                  marginTop: "-8px",
+                  marginBottom: "16px",
+                }}
+              />
               <p className="text-white font-robotoRegular text-[18px]">
-                Valem{' '}
+                Valem{" "}
                 <span className="text-[#00E46F] font-robotoRegularBold font-bold lg:text-[18px] text-[16px]">
                   {item.points} Pontos
-                </span>{' '}
+                </span>{" "}
                 ({item.points}P)
               </p>
               <br />
@@ -49,7 +59,7 @@ export default function Missions() {
               <Button
                 radius="full"
                 size="md"
-                className="bg-[#00E46F] font-headingBold text-[18px] text-[#003B9C] py-3 px-8"
+                className="bg-[#00E46F] font-headingBold text-[18px] text-[#003B9C] py-3 px-8 mb-3"
               >
                 COMEÇAR
               </Button>
@@ -59,7 +69,7 @@ export default function Missions() {
       </div>
 
       <Image
-        src={'/grouplogotext.png'}
+        src={"/grouplogotext.png"}
         alt="logo eds copa das torcidas"
         width={660}
         height={476}
@@ -69,7 +79,7 @@ export default function Missions() {
       />
 
       <Image
-        src={'/escudocopadastorcidas.png'}
+        src={"/escudocopadastorcidas.png"}
         alt="escudo copa das torcidas"
         width={100}
         height={100}
@@ -78,5 +88,5 @@ export default function Missions() {
         className="lg:hidden flex"
       />
     </main>
-  )
+  );
 }
