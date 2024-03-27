@@ -3,6 +3,7 @@
 import { missions } from '@/utils/missions-items'
 import { Accordion, AccordionItem, Button } from '@nextui-org/react'
 import Image from 'next/image'
+import Link from 'next/link'
 import React from 'react'
 
 export default function Missions() {
@@ -57,6 +58,10 @@ export default function Missions() {
               </p>
               <br />
               <Button
+                as={Link}
+                href={item.link}
+                target="_blank"
+                rel="noreferrer"
                 radius="full"
                 size="md"
                 className="bg-[#00E46F] font-headingBold text-[18px] text-[#003B9C] py-3 px-8 mb-3"
