@@ -7,7 +7,9 @@ import { ReactNode } from 'react'
 export default function Providers({ children }: { children: ReactNode }) {
   return (
     <AppContextProvider>
-      <NextUIProvider>{children}</NextUIProvider>
+      <NextUIProvider>
+        <main className="dark text-foreground bg-background">{children} </main>
+      </NextUIProvider>
     </AppContextProvider>
   )
 }
