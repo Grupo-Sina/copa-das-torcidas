@@ -4,7 +4,7 @@ export const missions = [
     title: 'Missões Nível 1',
     points: 25,
     description: `O time com mais seguidores em comum com a Copa das Torcidas ganha 50 bancas de R$10,00 pra distribuir com os torcedores.`,
-    link: 'https://www.esportesdasorte.com',
+    link: 'https://www.instagram.com/copadastorcidas?igsh=d2VpaW5qdHpwODkx',
   },
   // {
   //   id: 2,
