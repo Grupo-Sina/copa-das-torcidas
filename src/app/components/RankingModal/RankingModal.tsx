@@ -28,6 +28,10 @@ const RankingModal: React.FC<CustomModalProps> = ({ isOpen, onClose }) => {
       teamName: 'Tiradentes Vila Curuça',
       totalPoints: 0,
     },
+    {
+      teamName: 'X do Morro',
+      totalPoints: 0,
+    },
   ]
 
   const handleRenderLastItem = (index: number) => {
@@ -69,7 +73,7 @@ const RankingModal: React.FC<CustomModalProps> = ({ isOpen, onClose }) => {
                 </h1>
               </div>
               <h1 className="font-robotoRegular text-[12px] text-[#9E9E9E] mt-4">
-                Atualizado em: 22/03/2024 às 15:16:46
+                Atualizado em: 28/03/2024 às 16:07:46
               </h1>
             </ModalHeader>
             <ModalBody>

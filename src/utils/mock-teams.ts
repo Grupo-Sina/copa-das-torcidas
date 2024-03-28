@@ -1,22 +1,26 @@
 export const teams = [
   {
     name: 'Batti Fácil',
-    link: 'https://www.espostesdasorte.com/battifacil',
+    link: 'http://bit.ly/battif%C3%A1cil',
   },
   {
     name: 'Celeste',
-    link: 'https://www.espostesdasorte.com/celeste',
+    link: 'http://bit.ly/celestefc',
   },
   {
     name: 'Ajax 1973',
-    link: 'https://www.espostesdasorte.com/ajax1973',
+    link: 'http://bit.ly/ajaxoficial',
   },
   {
     name: 'Arsenal',
-    link: 'https://www.espostesdasorte.com/arsenal',
+    link: 'http://bit.ly/arsenalguarulhos',
   },
   {
     name: 'Tiradentes Vila Curuça',
-    link: 'https://www.espostesdasorte.com/tiradentes',
+    link: 'http://bit.ly/tiradentesvc',
+  },
+  {
+    name: 'X do Morro',
+    link: 'http://bit.ly/xdomorro',
   },
 ]
