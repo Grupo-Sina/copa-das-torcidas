@@ -66,7 +66,7 @@ export default function Missions() {
                 size="md"
                 className="bg-[#00E46F] font-headingBold text-[18px] text-[#003B9C] py-3 px-8 mb-3"
               >
-                COMEÇAR
+                CUMPRIR A MISSÃO AGORA!
               </Button>
             </AccordionItem>
           ))}

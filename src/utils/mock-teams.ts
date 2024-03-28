@@ -19,24 +19,4 @@ export const teams = [
     name: 'Tiradentes Vila Curuça',
     link: 'https://www.espostesdasorte.com/tiradentes',
   },
-  {
-    name: 'Time 6',
-    link: 'https://www.espostesdasorte.com',
-  },
-  {
-    name: 'Time 7',
-    link: 'https://www.espostesdasorte.com',
-  },
-  {
-    name: 'Time 8',
-    link: 'https://www.espostesdasorte.com',
-  },
-  {
-    name: 'Time 9',
-    link: 'https://www.espostesdasorte.com',
-  },
-  {
-    name: 'Time 10',
-    link: 'https://www.espostesdasorte.com',
-  },
 ]
