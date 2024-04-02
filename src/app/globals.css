@@ -86,6 +86,13 @@ body,
   }
 }
 
+.text-tiny{
+  @media(max-width: 370px){
+    font-size: 10px;
+    padding: 8px 16px
+  }
+}
+
 .group-\[\.is-splitted\]\:bg-content1 {
   background-color: #001f6d !important;
 }
@@ -102,3 +109,4 @@ body,
 .no-padding {
   padding: 0 !important;
 }
+
