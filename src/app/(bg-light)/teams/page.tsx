@@ -27,7 +27,7 @@ export default function Teams() {
         <div className="flex flex-col bg-[#001F6D] max-w-[844px] h-[420px] rounded-[12px] md:px-[24px] px-[12px] py-[24px]">
           <div className="flex items-center mb-3">
             <input
-              className="focus:outline-none bg-[#fff] dark:bg-[#fff] px-4 py-3 rounded-[198px] h-[40px] w-full border-[#858C94] border-[1px]"
+              className="focus:outline-none bg-[#fff] dark:bg-[#fff] px-4 py-3 rounded-[198px] h-[40px] w-full border-[#858C94] border-[1px] text-[#000]"
               value={searchTerm}
               onChange={handleSearchChange}
               placeholder="Pesquisar por nome"
