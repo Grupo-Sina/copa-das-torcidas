@@ -12,12 +12,9 @@ export default function HomeLayout({
   return (
     <div className="flex flex-col bg-yellow w-screen min-h-screen">
       <Header />
-      <div
-        className="flex flex-1 bg-no-repeat bg-center bg-cover object-cover relative "
-        style={{ backgroundImage: "url('/darkbluebg.png')" }}
-      >
+      <div className="flex flex-1 bg-no-repeat bg-center bg-cover object-cover relative ">
         <Image
-          layout="fill"
+          fill
           className="object-center object-cover pointer-events-none"
           src={'/darkbluebg.png'}
           alt={''}
