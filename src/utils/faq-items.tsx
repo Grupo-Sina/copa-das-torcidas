@@ -27,10 +27,10 @@ export const faqItems = [
     title: 'Como faço meu cadastro na Esportes da Sorte?',
     descriptions: [
       <>
-        É fácil demais, mano! Basta você <a href="/">clicar aqui</a>, procurar o
-        link do seu time, e fazer seu cadastro. E fica ligado! Use o link do seu
-        time para sua torcida acumular pontos na Copa das Torcidas e ser a
-        grande vencedora.
+        É fácil demais, mano! Basta você <a href="/teams">clicar aqui</a>,
+        procurar o link do seu time, e fazer seu cadastro. E fica ligado! Use o
+        link do seu time para sua torcida acumular pontos na Copa das Torcidas e
+        ser a grande vencedora.
       </>,
     ],
   },
