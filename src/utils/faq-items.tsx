@@ -1,4 +1,5 @@
 /* eslint-disable react/no-unescaped-entities */
+import LinkButton from '@/app/components/LinkButton/LinkButton'
 import React from 'react'
 
 export const faqItems = [
@@ -17,44 +18,54 @@ export const faqItems = [
   {
     title: 'Onde encontro o ranking dos times?',
     descriptions: [
-      <>
-        Para descobrir qual posição seu time está, é só{' '}
-        <a href="/ranking">clicar aqui</a>.
-      </>,
+      <div className="flex flex-col gap-5" key={2}>
+        <p>
+          Para descobrir qual posição seu time está, clique no botão abaixo.
+        </p>
+        <LinkButton link="/ranking" />
+      </div>,
     ],
   },
   {
     title: 'Como faço meu cadastro na Esportes da Sorte?',
     descriptions: [
-      <>
-        É fácil demais, mano! Basta você <a href="/teams">clicar aqui</a>,
-        procurar o link do seu time, e fazer seu cadastro. E fica ligado! Use o
-        link do seu time para sua torcida acumular pontos na Copa das Torcidas e
-        ser a grande vencedora.
-      </>,
+      <div className="flex flex-col gap-5" key={3}>
+        <p>
+          É fácil demais, mano! Basta você clicar no botão abaixo, procurar o
+          link do seu time, e fazer seu cadastro. E fica ligado! Use o link do
+          seu time para sua torcida acumular pontos na Copa das Torcidas e ser a
+          grande vencedora.
+        </p>
+        <LinkButton link="/teams" />
+      </div>,
     ],
   },
   {
     title: 'Como sei que meu time está participando?',
     descriptions: [
-      <>
-        {' '}
-        Basta <a href="/teams">clicar aqui</a> que você poderá conferir todos os
-        times cadastrados e confirmar se sua torcida está participando da Copa
-        das Torcidas.
-      </>,
-      'Se não estiver, não tem problema. As únicas pessoas que podem inscrever seu time são os dirigentes, é só solicitar ao seu time que eles se inscrevam na copa.',
+      'Basta clicar no botão abaixo que você poderá conferir todos os times cadastrados e confirmar se sua torcida está participando da Copa das Torcidas.',
+      <div className="flex flex-col gap-5" key={4}>
+        <p>
+          Se não estiver, não tem problema. As únicas pessoas que podem
+          inscrever seu time são os dirigentes, é só solicitar ao seu time que
+          eles se inscrevam na copa.
+        </p>
+        <LinkButton link="/teams" />
+      </div>,
     ],
   },
   {
     title: 'Onde vejo as missões ativas?',
     descriptions: [
-      <>
-        Basta <a href="/teams">clicar aqui</a> que você poderá conferir todos os
-        times cadastrados e confirmar se sua torcida está participando da Copa
-        das Torcidas.
-      </>,
-      `Se não estiver, não tem problema. As únicas pessoas que podem inscrever seu time são os dirigentes, é só solicitar ao seu time que eles se inscrevam na copa.`,
+      'Basta clicar no botão abaixo que você poderá conferir todos os times cadastrados e confirmar se sua torcida está participando da Copa das Torcidas.',
+      <div className="flex flex-col gap-5" key={4}>
+        <p>
+          Se não estiver, não tem problema. As únicas pessoas que podem
+          inscrever seu time são os dirigentes, é só solicitar ao seu time que
+          eles se inscrevam na copa.
+        </p>
+        <LinkButton link="/teams" />
+      </div>,
     ],
   },
 ]
