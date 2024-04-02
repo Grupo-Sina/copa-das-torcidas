@@ -9,7 +9,7 @@ import React from 'react'
 
 export default function Tutorials() {
   const { setModalVisible, setTutorialSelect } = useAppContext()
-  const isUnderConstruction = false
+  const isUnderConstruction = true
 
   const handleOpenTutorial = (link: string) => {
     setModalVisible('tutorial')
