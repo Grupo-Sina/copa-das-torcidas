@@ -1,16 +1,14 @@
-'use client'
-
-import useWindowWidth from '@/utils/window-width-hook'
+// import useWindowWidth from '@/utils/window-width-hook'
 import { Link } from '@nextui-org/react'
 import Image from 'next/image'
 
 export default function Home() {
-  const windowWidth = useWindowWidth()
+  // const windowWidth = useWindowWidth()
 
-  const bannerSrc =
-    windowWidth && windowWidth < 768
-      ? '/mobile-bannerclubedasorte.png'
-      : '/bannerclubedasorte.png'
+  // const bannerSrc =
+  //   windowWidth && windowWidth < 768
+  //     ? '/mobile-bannerclubedasorte.png'
+  //     : '/bannerclubedasorte.png'
 
   return (
     <main className="w-full flex-1 flex flex-col items-center justify-evenly overflow-auto lg:p-8 py-8 px-2 gap-5">
@@ -57,13 +55,22 @@ export default function Home() {
         rel="noreferrer"
       >
         <Image
-          src={bannerSrc}
+          src={'/bannerclubedasorte.png'}
           alt="banner eds"
           width={1640}
           height={276}
           quality={100}
           priority={true}
-          className="mx-auto mb-8 lg:mb-0 h-[210px] w-[100%]"
+          className="mx-auto mb-8 lg:mb-0 h-[210px] w-[100%] hidden md:block "
+        />
+        <Image
+          src={'/mobile-bannerclubedasorte.png'}
+          alt="banner eds"
+          width={1640}
+          height={276}
+          quality={100}
+          priority={true}
+          className="mx-auto mb-8 lg:mb-0 h-[210px] w-[100%] block md:hidden"
         />
       </Link>
     </main>
