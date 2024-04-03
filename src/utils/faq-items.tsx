@@ -36,7 +36,7 @@ export const faqItems = [
           seu time para sua torcida acumular pontos na Copa das Torcidas e ser a
           grande vencedora.
         </p>
-        <LinkButton link="https://m.esportesdasorte.com/ptb/authentication/signup" />
+        <LinkButton link="/teams" />
       </div>,
     ],
   },
