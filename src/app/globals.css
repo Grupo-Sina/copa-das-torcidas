@@ -86,10 +86,10 @@ body,
   }
 }
 
-.text-tiny{
-  @media(max-width: 370px){
+.text-tiny {
+  @media (max-width: 370px) {
     font-size: 10px;
-    padding: 6px 16px
+    padding: 6px 16px;
   }
 }
 
@@ -109,4 +109,3 @@ body,
 .no-padding {
   padding: 0 !important;
 }
-

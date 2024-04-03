@@ -14,7 +14,8 @@ export default function Missions() {
           MISSÕES ATIVAS
         </h1>
         <Accordion
-          defaultExpandedKeys={['1']}
+          disabledKeys={['1']}
+          // defaultExpandedKeys={['1']}
           className="text-white lg:w-[805px] w-full lg:p-6 pb-6 rounded-xl"
           variant="splitted"
           fullWidth

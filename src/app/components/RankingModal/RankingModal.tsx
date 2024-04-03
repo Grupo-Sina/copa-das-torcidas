@@ -9,15 +9,15 @@ interface CustomModalProps {
 const RankingModal: React.FC<CustomModalProps> = ({ isOpen, onClose }) => {
   const mockTeams = [
     {
+      teamName: 'Ajax 1973',
+      totalPoints: 25,
+    },
+    {
       teamName: 'Batti Fácil ',
       totalPoints: 10,
     },
     {
       teamName: 'Celeste',
-      totalPoints: 0,
-    },
-    {
-      teamName: 'Ajax 1973',
       totalPoints: 0,
     },
     {
