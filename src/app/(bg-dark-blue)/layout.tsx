@@ -20,7 +20,7 @@ export default function HomeLayout({
           alt={''}
           priority={true}
         />
-        <div className="relative z-1"> {children}</div>
+        <div className="relative z-1 w-screen"> {children}</div>
       </div>
       <Footer />
     </div>
