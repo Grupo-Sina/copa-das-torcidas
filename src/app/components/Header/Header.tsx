@@ -200,7 +200,7 @@ export default function Header() {
         <NavbarItem>
           <Button
             as={Link}
-            href="https://m.esportesdasorte.com/ptb/authentication/signup"
+            href="/teams"
             target="_blank"
             rel="noopener noreferrer"
             radius="full"
