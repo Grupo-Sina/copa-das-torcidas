@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import './globals.css'
+import 'react-responsive-carousel/lib/styles/carousel.min.css'
 
 import Providers from './providers'
 

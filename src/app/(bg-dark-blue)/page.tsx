@@ -1,7 +1,8 @@
+'use client'
 // import useWindowWidth from '@/utils/window-width-hook'
-import { Link } from '@nextui-org/react'
 import Image from 'next/image'
-
+import CarouselMobileComponent from '../components/Carousel/CarouselMobile'
+import CarouselLargeComponent from '../components/Carousel/CarouselLarge'
 export default function Home() {
   // const windowWidth = useWindowWidth()
 
@@ -48,7 +49,9 @@ export default function Home() {
           </p>
         </div>
       </div>
-      <Link
+      <CarouselLargeComponent />
+      <CarouselMobileComponent />
+      {/* <Link
         className="w-[85%] rounded-lg"
         href="https://m.esportesdasorte.com/ptb/pages/clube_eds"
         target="_blank"
@@ -72,7 +75,7 @@ export default function Home() {
           priority={true}
           className="mx-auto mb-8 lg:mb-0 h-[210px] w-[100%] block md:hidden"
         />
-      </Link>
+      </Link> */}
     </main>
   )
 }
