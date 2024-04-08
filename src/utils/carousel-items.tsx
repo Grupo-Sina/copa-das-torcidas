@@ -14,6 +14,11 @@ export const carouselItemDesktop = [
     alt: 'banner eds',
     link: 'https://m.esportesdasorte.com/ptb/games/casino/detail/normal/23109',
   },
+  {
+    src: '/spaceman-large.png',
+    alt: 'banner eds',
+    link: 'https://www.esportesdasorte.com/ptb/games/casino/detail/normal/19364',
+  },
 ]
 
 export const carouselItemMobile = [
@@ -31,5 +36,10 @@ export const carouselItemMobile = [
     src: '/penalti-mobile.png',
     alt: 'banner eds',
     link: 'https://m.esportesdasorte.com/ptb/games/casino/detail/normal/23109',
+  },
+  {
+    src: '/spaceman-mobile.png',
+    alt: 'banner eds',
+    link: 'https://www.esportesdasorte.com/ptb/games/casino/detail/normal/19364',
   },
 ]
