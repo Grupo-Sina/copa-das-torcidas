@@ -7,6 +7,14 @@ import Link from 'next/link'
 import React from 'react'
 
 export default function Missions() {
+  const instructions = [
+    `Clique na aba "Times".`,
+    `Procure o nome do seu time.`,
+    `Clique em "DEPOSITE".`,
+    `Faça um depósito de QUALQUER VALOR e
+  concorra.`,
+  ]
+
   return (
     <main className="w-full flex justify-around items-center flex-col lg:flex-row flex-wrap  pb-10">
       <div className="lg:px-8 px-4 lg:w-[805px] w-full">
@@ -14,8 +22,8 @@ export default function Missions() {
           MISSÕES ATIVAS
         </h1>
         <Accordion
-          disabledKeys={['1']}
-          // defaultExpandedKeys={['1']}
+          // disabledKeys={['1']}
+          defaultExpandedKeys={['1']}
           className="text-white lg:w-[805px] w-full lg:p-6 pb-6 rounded-xl"
           variant="splitted"
           fullWidth
@@ -46,17 +54,28 @@ export default function Missions() {
                   marginBottom: '16px',
                 }}
               />
-              <p className="text-white font-robotoRegular text-[18px]">
+              {/* <p className="text-white font-robotoRegular text-[18px]">
                 Valem{' '}
                 <span className="text-[#00E46F] font-robotoRegularBold font-bold lg:text-[18px] text-[16px]">
                   {item.points} Pontos
                 </span>{' '}
                 ({item.points}P)
-              </p>
+              </p> */}
               <br />
               <p className="text-white lg:text-[16px] text-[14px] font-robotoRegular">
                 {item.description}
               </p>
+              <br />
+              <ul>
+                {instructions.map((instrction, index) => (
+                  <li
+                    key={index}
+                    className="text-white lg:text-[16px] text-[14px] font-robotoRegular"
+                  >
+                    {index + 1}. {instrction}
+                  </li>
+                ))}
+              </ul>
               <br />
               <Button
                 as={Link}
