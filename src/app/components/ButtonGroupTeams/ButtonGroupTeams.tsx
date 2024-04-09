@@ -16,7 +16,7 @@ export default function ButtonGroupTeams({ link, deposit }: ButtonGroupTeams) {
     setModalVisible('qrcode')
   }
   return (
-    <div className="flex md:gap-[15px] gap-[3px] md:mr-[12px] mr-[8px]">
+    <div className="flex md:gap-[15px] gap-[3px] md:mr-[12px] mr-[8px] flex-wrap">
       <Button
         title={'CADASTRE-SE'}
         onClick={() => window.open(link, '_blank')}

@@ -20,7 +20,7 @@ export default function Teams() {
 
   return (
     <div className="flex items-center justify-evenly w-full relative flex-col lg:flex-row">
-      <div className="flex flex-col lg:w-[1160px] z-10 md:p-16 p-4">
+      <div className="flex flex-col lg:w-[1160px] w-full z-10 md:p-16 p-4">
         <h1 className="mb-3 text-shadow lg:text-start text-center text-shadow-lg sm:text-shadow-none font-cloverGroteskBlackRegular text-[#001F6D] text-[32px] md:text-[56px]  font-bold">
           TIMES PARTICIPANTES
         </h1>
@@ -44,14 +44,14 @@ export default function Teams() {
             {filteredTeams.map((item, index) => (
               <div
                 key={index}
-                className="flex  w-[98%] items-center justify-between mt-[16px] pb-[16px]  border-b-[#FFFFFF] border-b-[0.5px]"
+                className="flex md:flex-row flex-col w-[98%] md:items-center md:justify-between mt-[16px] pb-[16px]  border-b-[#FFFFFF] border-b-[0.5px]"
               >
                 <div className="inline-block md:w-full max-w-[30%]">
                   <p className="line-clamp-2 md:text-[18px] sm:text-[16px] text-[14px] text-[#FFFFFF] font-bold font-robotoRegular md:leading-7 leading-4">
                     {item.name}
                   </p>
                 </div>
-                <div className="md:w-full w-[70%] flex justify-end items-end">
+                <div className="w-full flex md:justify-end md:items-end md:mt-0 mt-3">
                   <ButtonGroupTeams link={item.link} deposit={item.deposit} />
                 </div>
               </div>
