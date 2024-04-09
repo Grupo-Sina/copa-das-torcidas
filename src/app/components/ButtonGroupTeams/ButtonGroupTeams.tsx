@@ -5,9 +5,10 @@ import { useAppContext } from '@/context/AppContext'
 
 type ButtonGroupTeams = {
   link: string
+  deposit: string
 }
 
-export default function ButtonGroupTeams({ link }: ButtonGroupTeams) {
+export default function ButtonGroupTeams({ link, deposit }: ButtonGroupTeams) {
   const { setTeamLinkSelect, setModalVisible } = useAppContext()
 
   const handleQrCodeClick = () => {
@@ -21,6 +22,10 @@ export default function ButtonGroupTeams({ link }: ButtonGroupTeams) {
         onClick={() => window.open(link, '_blank')}
       />
       <Button title={'VER QR CODE'} onClick={() => handleQrCodeClick()} />
+      <Button
+        title={'DEPOSITE'}
+        onClick={() => window.open(deposit, '_blank')}
+      />
     </div>
   )
 }

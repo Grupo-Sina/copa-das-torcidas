@@ -52,7 +52,7 @@ export default function Teams() {
                   </p>
                 </div>
                 <div className="md:w-full w-[70%] flex justify-end items-end">
-                  <ButtonGroupTeams link={item.link} />
+                  <ButtonGroupTeams link={item.link} deposit={item.deposit} />
                 </div>
               </div>
             ))}
