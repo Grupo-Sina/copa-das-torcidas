@@ -2,7 +2,7 @@ export const missions = [
   {
     id: 1,
     title: 'Missões Nível 1',
-    points: 25,
+    points: 50,
     description: `Garantir a gelada do final de semana sem esforço nenhum é só na Copa das Torcidas! 
     A nova missão está no ar e o seu time pode ganhar R$1000 em cervejas para tomar com os torcedores. O time que vai levar as cervas é o que tiver o maior número de depósitos na Esportes da Sorte. E como vamos saber que o seu depósito conta pontos para o seu time? Basta seguir o passo a passo abaixo: 
     `,

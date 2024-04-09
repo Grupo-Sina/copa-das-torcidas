@@ -54,13 +54,13 @@ export default function Missions() {
                   marginBottom: '16px',
                 }}
               />
-              {/* <p className="text-white font-robotoRegular text-[18px]">
+              <p className="text-white font-robotoRegular text-[18px]">
                 Valem{' '}
                 <span className="text-[#00E46F] font-robotoRegularBold font-bold lg:text-[18px] text-[16px]">
                   {item.points} Pontos
                 </span>{' '}
                 ({item.points}P)
-              </p> */}
+              </p>
               <br />
               <p className="text-white lg:text-[16px] text-[14px] font-robotoRegular">
                 {item.description}
@@ -76,6 +76,20 @@ export default function Missions() {
                   </li>
                 ))}
               </ul>
+              <br />
+              <p className="text-white lg:text-[16px] text-[14px] font-robotoRegular">
+                Pontuações da missão:
+              </p>
+              <br />
+              <p className="text-white lg:text-[16px] text-[14px] font-robotoRegular">
+                50 pontos para o 1º lugar.{' '}
+              </p>
+              <p className="text-white lg:text-[16px] text-[14px] font-robotoRegular">
+                30 pontos para o 2º lugar.{' '}
+              </p>
+              <p className="text-white lg:text-[16px] text-[14px] font-robotoRegular">
+                20 pontos para o 3º lugar.{' '}
+              </p>
               <br />
               <Button
                 as={Link}
