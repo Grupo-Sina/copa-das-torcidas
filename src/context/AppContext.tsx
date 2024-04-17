@@ -9,6 +9,12 @@ type AppContextType = {
   setTeamLinkSelect: React.Dispatch<React.SetStateAction<string | undefined>>
   tutorialSelect: string | undefined
   setTutorialSelect: React.Dispatch<React.SetStateAction<string | undefined>>
+  shouldMutedVideo: boolean
+  setShouldMutedVideo: React.Dispatch<React.SetStateAction<boolean>>
+  videoReady: boolean
+  setVideoReady: React.Dispatch<React.SetStateAction<boolean>>
+  videoLoaded: number
+  setVideoLoaded: React.Dispatch<React.SetStateAction<number>>
 }
 
 const AppContext = createContext<AppContextType | undefined>(undefined)
@@ -16,6 +22,9 @@ const AppContext = createContext<AppContextType | undefined>(undefined)
 export const AppContextProvider: React.FC<{ children: ReactNode }> = ({
   children,
 }) => {
+  const [videoLoaded, setVideoLoaded] = useState(0)
+  const [shouldMutedVideo, setShouldMutedVideo] = useState(true)
+  const [videoReady, setVideoReady] = useState(false)
   const [modalVisible, setModalVisible] = useState<ModalVisible>(undefined)
   const [teamLinkSelect, setTeamLinkSelect] = useState<string | undefined>(
     undefined,
@@ -31,6 +40,12 @@ export const AppContextProvider: React.FC<{ children: ReactNode }> = ({
     setTeamLinkSelect,
     tutorialSelect,
     setTutorialSelect,
+    shouldMutedVideo,
+    setShouldMutedVideo,
+    videoReady,
+    setVideoReady,
+    videoLoaded,
+    setVideoLoaded,
   }
 
   return (
