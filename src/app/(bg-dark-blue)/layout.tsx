@@ -10,7 +10,7 @@ export default function HomeLayout({
   children: React.ReactNode
 }>) {
   return (
-    <div className="flex flex-col bg-yellow w-screen min-h-screen">
+    <div className="flex flex-col bg-yellow w-screen min-h-screen ">
       <Header />
       <div className="flex flex-1 bg-no-repeat bg-center bg-cover object-cover relative ">
         <Image

@@ -9,11 +9,11 @@ export default function HomeContent() {
   const [shouldChangeText, setShouldChangeText] = useState<boolean>(false)
   const { shouldMutedVideo, setShouldMutedVideo } = useAppContext()
   return (
-    <main className="w-full flex-1 flex flex-col items-center desktop:justify-center justify-around xl:justify-evenly overflow-auto lg:p-8 py-8 px-2 gap-5 h-full relative">
+    <main className="w-full flex-1 flex flex-col items-center desktop:justify-center justify-around xl:justify-evenly overflow-auto lg:p-8 py-8 px-2 gap-20 h-full relative">
       <CarouselLargeComponent />
       <CarouselMobileComponent />
       <div
-        className="flex flex-col lg:flex-row items-center justify-end lg:gap-16 bg-white w-[85%] p-4 px-4 rounded-xl h-auto xl:relative"
+        className="flex flex-col mb-[100px] lg:flex-row items-center justify-end lg:gap-16 bg-white w-[85%] p-4 px-4 rounded-xl h-auto xl:relative"
         style={{ backgroundImage: "url('/lightbgdiv.png')" }}
       >
         <Image
@@ -33,10 +33,10 @@ export default function HomeContent() {
           height={180}
           quality={100}
           priority={true}
-          className="absolute top-[245px] lg:top-[300px] right-[43%] h-[180px] w-[168px] xl:hidden"
+          className="mt-[-120px] h-[180px] w-[168px] xl:hidden"
         />
 
-        <div className="flex flex-col h-full my-8 lg:my-0 px-4 pt-20 xl:pt-0 2xl:px-0 w-[100%] xl:w-[70%] 2xl:w-[75%]">
+        <div className="flex flex-col h-full my-8 lg:my-0 px-4 pt-3 xl:pt-0 2xl:px-0 w-[100%] xl:w-[70%] 2xl:w-[75%]">
           <h1 className="text-shadow text-center xl:text-left mb-4 text-[32px] text-bold lg:text-[50px] text-[#001F6D] font-cloverGroteskBlack">
             COPA DAS TORCIDAS
           </h1>
