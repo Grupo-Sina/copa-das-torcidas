@@ -13,6 +13,8 @@ type AppContextType = {
   setShouldMutedVideo: React.Dispatch<React.SetStateAction<boolean>>
   videoReady: boolean
   setVideoReady: React.Dispatch<React.SetStateAction<boolean>>
+  videoLoaded: number
+  setVideoLoaded: React.Dispatch<React.SetStateAction<number>>
 }
 
 const AppContext = createContext<AppContextType | undefined>(undefined)
@@ -20,6 +22,7 @@ const AppContext = createContext<AppContextType | undefined>(undefined)
 export const AppContextProvider: React.FC<{ children: ReactNode }> = ({
   children,
 }) => {
+  const [videoLoaded, setVideoLoaded] = useState(0)
   const [shouldMutedVideo, setShouldMutedVideo] = useState(true)
   const [videoReady, setVideoReady] = useState(false)
   const [modalVisible, setModalVisible] = useState<ModalVisible>(undefined)
@@ -41,6 +44,8 @@ export const AppContextProvider: React.FC<{ children: ReactNode }> = ({
     setShouldMutedVideo,
     videoReady,
     setVideoReady,
+    videoLoaded,
+    setVideoLoaded,
   }
 
   return (

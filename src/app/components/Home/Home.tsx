@@ -4,7 +4,7 @@ import { useEffect, useState } from 'react'
 import HomeContent from '../HomeContent/HomeContent'
 
 import dynamic from 'next/dynamic'
-import { Button } from '@nextui-org/react'
+import { Button, Progress } from '@nextui-org/react'
 import { useAppContext } from '@/context/AppContext'
 
 const HomeVideo = dynamic(() => import('../HomeVideo/HomeVideo'), {
@@ -29,13 +29,18 @@ export default function HomeComponent() {
                 onClick={() => setShouldShowVideo(false)}
                 rel="noopener noreferrer"
                 radius="full"
-                className="bg-[#00E46F] md:bottom-auto bottom-6 md:mt-[-120px]  text-[#003B9C]  flex py-3 px-8 font-headingBold text-[16px] absolute  left-1/2 transform -translate-x-1/2 z-[9999999]"
+                className="bg-[#00E46F] lg:bottom-auto bottom-6 lg:mt-[-120px]  text-[#003B9C]  flex py-3 px-8 font-headingBold text-[16px] absolute  left-1/2 transform -translate-x-1/2 z-[3]"
               >
                 SAIBA MAIS
               </Button>
             </div>
           ) : (
-            <p>Carregando...</p>
+            <Progress
+              size="sm"
+              isIndeterminate
+              aria-label="Loading..."
+              className="w-screen"
+            />
           )}
         </div>
       ) : (
