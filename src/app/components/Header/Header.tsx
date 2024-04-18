@@ -11,7 +11,6 @@ import {
   NavbarMenuToggle,
 } from '@nextui-org/react'
 import Image from 'next/image'
-import logoedsheader from '../../../../public/logoedsheader.png'
 import { useState } from 'react'
 import { usePathname } from 'next/navigation'
 
@@ -29,7 +28,7 @@ export default function Header() {
       className="h-[93px] bg-[#0F1768] w-screen flex justify-between"
       position="static"
       classNames={{
-        wrapper: 'justify-center md:justify-around',
+        wrapper: 'justify-center md:justify-between w-[84%] mx-auto',
       }}
     >
       <NavbarMenuToggle
@@ -39,7 +38,14 @@ export default function Header() {
 
       <NavbarContent justify="center" className="flex">
         <Link href="/" className="mx-auto">
-          <Image src={logoedsheader} alt="logoedsheader" />
+          <Image
+            src={'/logoedsheader.png'}
+            alt="logoedsheader"
+            width={265}
+            height={28}
+            quality={100}
+            priority
+          />
         </Link>
       </NavbarContent>
 
