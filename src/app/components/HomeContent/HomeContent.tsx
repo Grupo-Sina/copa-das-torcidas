@@ -5,6 +5,8 @@ import { useState } from 'react'
 import { Button } from '@nextui-org/react'
 import { useAppContext } from '@/context/AppContext'
 
+// xl:w-[70%] 2xl:w-[75%]
+
 export default function HomeContent() {
   const [shouldChangeText, setShouldChangeText] = useState<boolean>(false)
   const { shouldMutedVideo, setShouldMutedVideo } = useAppContext()
@@ -13,18 +15,17 @@ export default function HomeContent() {
       <CarouselLargeComponent />
       <CarouselMobileComponent />
       <div
-        className="flex flex-col mb-[100px] lg:flex-row items-center justify-end lg:gap-16 bg-white w-[85%] p-4 px-4 rounded-xl h-auto xl:relative"
+        className="flex flex-col mb-[100px] lg:flex-row items-center justify-around lg:gap-8 bg-white w-[85%] p-4 px-4 rounded-xl h-auto lg:relative"
         style={{ backgroundImage: "url('/lightbgdiv.png')" }}
       >
         <Image
           src={'/escudocopadastorcidas.png'}
           alt="escudo copa das torcidas"
-          width={369}
-          height={394}
+          width={429}
+          height={454}
           quality={100}
           priority={true}
-          className={`hidden xl:flex xl:absolute left-[-70px] bottom-[-80px] max-h-[394px] max-w-[369px]`}
-          style={{ width: '100%', height: 'auto' }} // Adicione esta linha
+          className={`hidden lg:h-[294px] lg:w-[269px] lg:flex xl:max-h-[454px] xl:max-w-[429px]`}
         />
         <Image
           src={'/escudocopadastorcidas.png'}
@@ -33,16 +34,16 @@ export default function HomeContent() {
           height={180}
           quality={100}
           priority={true}
-          className="mt-[-120px] h-[180px] w-[168px] xl:hidden"
+          className="mt-[-120px] h-[180px] w-[168px] lg:hidden"
         />
 
-        <div className="flex flex-col h-full my-8 lg:my-0 px-4 pt-3 xl:pt-0 2xl:px-0 w-[100%] xl:w-[70%] 2xl:w-[75%]">
+        <div className="flex flex-col h-full my-8 lg:my-0 px-4 pt-3 xl:pt-0 2xl:px-0 w-full">
           <h1 className="text-shadow text-center xl:text-left mb-4 text-[32px] text-bold lg:text-[50px] text-[#001F6D] font-cloverGroteskBlack">
             COPA DAS TORCIDAS
           </h1>
           {shouldChangeText === false && (
             <>
-              <p className="w-full text-[24px] text-[#001F6D] font-robotoRegular text-justify items-center">
+              <p className="w-full text-[24px] md:text-[28px] text-[#001F6D] font-robotoRegular text-justify items-center">
                 Foi dada a largada na{' '}
                 <span className="font-bold font-robotoBold">
                   COPA DAS TORCIDAS
@@ -56,7 +57,7 @@ export default function HomeContent() {
                 target="_blank"
                 rel="noopener noreferrer"
                 radius="full"
-                className="w-full md:w-[141px] bg-[#00E46F] text-[#003B9C] md:flex py-3 px-8 font-headingBold text-[16px]"
+                className="w-full lg:w-[141px] bg-[#00E46F] text-[#003B9C] md:flex py-3 px-8 font-headingBold text-[16px]"
               >
                 LER MAIS
               </Button>

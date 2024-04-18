@@ -4,7 +4,7 @@ import useWindowWidth from '@/utils/window-width-hook'
 import HomeContent from '../HomeContent/HomeContent'
 
 import dynamic from 'next/dynamic'
-import { Button, Progress } from '@nextui-org/react'
+import { Button, Spinner } from '@nextui-org/react'
 import { useAppContext } from '@/context/AppContext'
 
 const HomeVideo = dynamic(() => import('../HomeVideo/HomeVideo'), {
@@ -13,7 +13,7 @@ const HomeVideo = dynamic(() => import('../HomeVideo/HomeVideo'), {
 export default function HomeComponent() {
   const windowWidth = useWindowWidth()
   const { videoReady } = useAppContext()
-  const [shouldShowVideo, setShouldShowVideo] = useState(false)
+  const [shouldShowVideo, setShouldShowVideo] = useState(true)
   const isLargeScreen = !!(windowWidth && windowWidth > 1024)
 
   useEffect(() => {
@@ -25,9 +25,9 @@ export default function HomeComponent() {
   }, [isLargeScreen])
 
   return (
-    <div>
+    <div className="flex justify-center items-center h-full">
       {shouldShowVideo ? (
-        <div>
+        <div className="">
           <HomeVideo />
           {videoReady ? (
             <div>
@@ -41,12 +41,7 @@ export default function HomeComponent() {
               </Button>
             </div>
           ) : (
-            <Progress
-              size="sm"
-              isIndeterminate
-              aria-label="Loading..."
-              className="w-screen"
-            />
+            <Spinner size="lg" color="primary" />
           )}
         </div>
       ) : (

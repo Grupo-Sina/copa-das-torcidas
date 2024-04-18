@@ -39,10 +39,10 @@ export default function Header() {
       <NavbarContent justify="center" className="flex">
         <Link href="/" className="mx-auto">
           <Image
-            src={'/escudocopadastorcidas.png'}
+            src={'/logoedsheader.png'}
             alt="logoedsheader"
-            width={42}
-            height={45}
+            width={265}
+            height={28}
             quality={100}
             priority
           />
