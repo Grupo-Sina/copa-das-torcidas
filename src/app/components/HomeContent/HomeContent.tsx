@@ -3,13 +3,12 @@ import CarouselLargeComponent from '../Carousel/CarouselLarge'
 import CarouselMobileComponent from '../Carousel/CarouselMobile'
 import { useState } from 'react'
 import { Button } from '@nextui-org/react'
-import { useAppContext } from '@/context/AppContext'
 
-// xl:w-[70%] 2xl:w-[75%]
+import HomeVideoMobile from '../HomeVideo/HomeVideoMobile'
 
 export default function HomeContent() {
   const [shouldChangeText, setShouldChangeText] = useState<boolean>(false)
-  const { shouldMutedVideo, setShouldMutedVideo } = useAppContext()
+
   return (
     <main className="w-full flex-1 flex flex-col items-center desktop:justify-center justify-around xl:justify-evenly overflow-auto lg:p-8 py-8 px-2 gap-20 h-full relative">
       <CarouselLargeComponent />
@@ -79,16 +78,7 @@ export default function HomeContent() {
             </>
           )}
         </div>
-        <video
-          autoPlay
-          loop
-          muted={shouldMutedVideo}
-          className="bg-video w-full lg:hidden rounded-xl"
-          onClick={() => setShouldMutedVideo(false)}
-          disableRemotePlayback
-        >
-          <source src={'/video-home.mp4'} type="video/mp4" />{' '}
-        </video>
+        <HomeVideoMobile />
       </div>
     </main>
   )
