@@ -18,6 +18,18 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pt-br">
+      <link
+        rel="prefetch"
+        href="video-home-mobile.mp4"
+        as="video"
+        type="video/mp4"
+      ></link>
+      <link
+        rel="prefetch"
+        href="video-home.mp4"
+        as="video"
+        type="video/mp4"
+      ></link>
       <body className=" overflow-x-hidden">
         <Providers>{children}</Providers>
         <Suspense fallback={null}>
