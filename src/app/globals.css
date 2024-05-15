@@ -2,6 +2,26 @@
 @tailwind components;
 @tailwind utilities;
 
+
+@font-face {
+  font-family: "Microsport Bold";
+  src: url("./fonts/Microsport-Bold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Braked Regular";
+  src: url("./fonts/Braked.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Braked Semibold";
+  src: url("./fonts/Braked-Semibold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Braked Bold";
+  src: url("./fonts/Braked-Bold.ttf") format("truetype");
+}
+
 @font-face {
   font-family: "Roboto Regular";
   src: url("./fonts/Roboto-Regular.ttf") format("truetype");
