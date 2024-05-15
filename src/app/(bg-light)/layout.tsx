@@ -12,7 +12,7 @@ export default function AboutLayout({
       <Header />
       <div
         className="flex flex-1 bg-no-repeat bg-center bg-cover object-cover pb-10"
-        style={{ backgroundImage: "url('/lightbg.png')" }}
+        style={{ backgroundImage: "url('/bg-white.png')" }}
       >
         {children}
       </div>
