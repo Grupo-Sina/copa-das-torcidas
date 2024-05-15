@@ -2,7 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-
 @font-face {
   font-family: "Microsport Bold";
   src: url("./fonts/Microsport-Bold.ttf") format("truetype");

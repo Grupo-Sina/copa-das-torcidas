@@ -18,7 +18,7 @@ export default function CarouselMobileComponent() {
         {carouselItemMobile.map((item, index) => (
           <div key={index}>
             <Link
-              className="w-full rounded-lg overflow-hidden"
+              className="w-full overflow-hidden border-[#00E46F] border-[2px] border-solid h-full rounded-xl"
               href={item.link}
               target="_blank"
               rel="noreferrer"
