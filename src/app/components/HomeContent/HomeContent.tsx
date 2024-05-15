@@ -4,8 +4,11 @@ import CarouselMobileComponent from '../Carousel/CarouselMobile'
 import { useState } from 'react'
 import { Button } from '@nextui-org/react'
 import { useAppContext } from '@/context/AppContext'
+import { Montserrat } from 'next/font/google'
 
-// xl:w-[70%] 2xl:w-[75%]
+const montserrat = Montserrat({
+  subsets: ['latin'],
+})
 
 export default function HomeContent() {
   const [shouldChangeText, setShouldChangeText] = useState<boolean>(false)
@@ -15,7 +18,7 @@ export default function HomeContent() {
       <CarouselLargeComponent />
       <CarouselMobileComponent />
       <div
-        className="flex flex-col mb-[100px] lg:flex-row items-center justify-around lg:gap-8 bg-white w-[85%] p-4 px-4 rounded-xl h-auto lg:relative"
+        className="flex flex-col lg:flex-row items-center justify-around lg:gap-8 bg-white w-[85%] p-4 px-4 rounded-xl h-auto lg:relative"
         style={{ backgroundImage: "url('/lightbgdiv.png')" }}
       >
         <Image
@@ -37,15 +40,17 @@ export default function HomeContent() {
           className="mt-[-120px] h-[180px] w-[168px] lg:hidden"
         />
 
-        <div className="flex flex-col h-full my-8 lg:my-0 px-4 pt-3 xl:pt-0 2xl:px-0 w-full">
-          <h1 className="text-shadow text-center xl:text-left mb-4 text-[32px] text-bold lg:text-[50px] text-[#001F6D] font-cloverGroteskBlack">
+        <div className="flex flex-col h-full my-8 lg:my-0 px-4 lg:pt-3 xl:pt-0 2xl:px-0 w-full">
+          <h1 className="xl:leading-tight text-center xl:text-left text-[56px] sm:text-[64px] lg:text-[100px] text-[#001F6D] font-brakedBold">
             COPA DAS TORCIDAS
           </h1>
           {shouldChangeText === false && (
             <>
-              <p className="w-full text-[24px] md:text-[28px] text-[#001F6D] font-robotoRegular text-justify items-center">
+              <p
+                className={`${montserrat.className} w-full sm:text-[28px] text-[18px] text-[#001F6D] text-justify items-center`}
+              >
                 Foi dada a largada na{' '}
-                <span className="font-bold font-robotoBold">
+                <span className="text-[18px] sm:text-[28px] font-bold">
                   COPA DAS TORCIDAS
                 </span>
                 , que vai em busca da torcida mais apaixonada para premiar
@@ -57,7 +62,7 @@ export default function HomeContent() {
                 target="_blank"
                 rel="noopener noreferrer"
                 radius="full"
-                className="w-full lg:w-[141px] bg-[#00E46F] text-[#003B9C] md:flex py-3 px-8 font-headingBold text-[16px]"
+                className="hover:bg-[white] mx-auto xl:mx-0 w-full lg:w-[141px] bg-[#00E46F] text-[#003B9C] md:flex py-3 px-8 font-headingBold text-[18px]"
               >
                 LER MAIS
               </Button>
@@ -66,14 +71,17 @@ export default function HomeContent() {
 
           {shouldChangeText && (
             <>
-              <p className="font-robotoRegular text-[18px] md:text-[24px] text-[#001F6D] text-justify">
+              <p
+                className={`${montserrat.className} text-[18px] md:text-[24px] text-[#001F6D] text-justify`}
+              >
                 Como a Esportes da Sorte não deixa a brincadeira ficar chata
                 para ninguém, a procura pela torcida com o grito mais forte vai
-                vir acompanhada de premiações semanais, com bancas na plataforma
-                oficial, espaços vips para as torcidas em dia de eventos,
-                brindes personalizados e o seu time ainda vai poder lutar pelo
-                grande prêmio! Assim, a corrida até o título fica ainda mais
-                emocionante para você!
+                vir acompanhada de{' '}
+                <span className="font-bold">premiações semanais</span>, com
+                bancas na plataforma oficial, espaços vips para as torcidas em
+                dia de eventos, brindes personalizados e o seu time ainda vai
+                poder lutar pelo grande prêmio! Assim, a corrida até o título
+                fica ainda mais emocionante para você!
               </p>
               <br />
             </>
