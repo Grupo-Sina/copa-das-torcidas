@@ -13,7 +13,7 @@ export default function MissionsLayout({
       <Header />
       <div
         className="flex flex-1 bg-no-repeat bg-center bg-cover object-cover overflow-hidden"
-        style={{ backgroundImage: "url('/lightbluebg.png')" }}
+        style={{ backgroundImage: "url('/halfdarkbg.png')" }}
       >
         {children}
       </div>
