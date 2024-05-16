@@ -32,7 +32,7 @@ module.exports = {
         cloverGroteskBlack: ['Clover Grotesk Black', 'sans-serif'],
         cloverGroteskBlackLight: ['Clover Grotesk Light', 'sans-serif'],
         cloverGroteskBlackRegular: ['Clover Grotesk Regular', 'sans-serif'],
-        microsportGold: ['Microsport Bold', 'sans-serif'],
+        microsportBold: ['Microsport Bold', 'sans-serif'],
         braked: ['Braked Regular', 'sans-serif'],
         brakedSemibold: ['Braked Semibold', 'sans-serif'],
         brakedBold: ['Braked Bold', 'sans-serif'],
