@@ -37,7 +37,7 @@ export default function Teams() {
   return (
     <div
       ref={parent}
-      className="flex w-full z-10 min-h-[90vh] lg:p-16 p-4 flex-col lg:flex-row justify-between gap-10 items-center"
+      className="flex w-full z-10 min-h-[100%] lg:p-16 p-4 flex-col lg:flex-row justify-between gap-10 items-center"
     >
       {!load ? (
         <div className="h-[450px] flex w-full justify-center">

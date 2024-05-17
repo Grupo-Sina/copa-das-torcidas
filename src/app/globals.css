@@ -181,16 +181,45 @@ body,
 }
 
 .margin-bottom-object{
-  @media(min-height: 433px){
+  @media(min-height: 333px){
     bottom: -320px;
   }
+  @media(min-height: 490px){
+    bottom: -220px;
+  }
   @media(min-height: 598px){
-    bottom: -55px;
+    bottom: -100px;
   }
   @media(min-height: 747px){
     bottom: 0px;
   }
   bottom: -500px; 
+
+}
+
+.margin-bottom-object-faq{
+  @media(min-height: 333px){
+    bottom: -480px;
+  }
+  @media(min-height: 490px){
+    bottom: -380px;
+  }
+  @media(min-height: 598px){
+    bottom: -310px;
+  }
+  @media(min-height: 668px){
+    bottom: -240px;
+  }
+  @media(min-height: 747px){
+    bottom: -180px;
+  }
+  @media(min-height: 847px){
+    bottom: -60px;
+  }
+  @media(min-height: 947px){
+    bottom: -0px;
+  }
+  bottom: 0px; 
 
 }
 
