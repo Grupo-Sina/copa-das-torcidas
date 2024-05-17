@@ -5,16 +5,17 @@ import Image from 'next/image'
 
 export default function Faq() {
   return (
-    <div className="flex items-center justify-evenly w-full relative flex-col lg:flex-row px-5">
-      <div className="flex flex-col lg:w-[1123px] w-full z-10 lg:p-16  p-4">
-        <h1 className="mb-3 lg:ml-4 text-shadow lg:text-start text-center text-shadow-lg sm:text-shadow-none font-cloverGroteskBlackRegular text-[#001F6D] text-[32px] lg:text-[56px]  font-bold">
-          FAQ
+    <div className="flex  justify-evenly w-full relative flex-col lg:flex-row lg:px-5 px-0 min-h-[83vh]">
+      <div className="flex flex-col lg:w-[1123px] w-full z-10 lg:p-16 p-4 lg:gap-10">
+        <h1 className="mt-3 mb-4 lg:mb-0 lg:ml-4 text-shadow lg:text-start text-center text-shadow-lg sm:text-shadow-none font-brakedBold text-[#001F6D] text-[48px] lg:text-[100px] leading-10">
+          PERGUNTAS FREQUENTES
         </h1>
 
         <Accordion
           className=" text-white lg:w-[805px] rounded-xl"
           variant="splitted"
           fullWidth
+          defaultExpandedKeys={['0']}
         >
           {faqItems.map((item, index) => (
             <AccordionItem
@@ -23,14 +24,14 @@ export default function Faq() {
               title={item.title}
               classNames={{
                 title:
-                  'text-white font-robotoRegular lg:text-[24px] text-[18px] ',
+                  'text-white font-microsportBold  lg:text-[20px] text-[16px] ',
               }}
             >
               <hr className="mb-[10px]" />
               {item.descriptions.map((description, indexDescription) => (
                 <p
                   key={indexDescription}
-                  className="text-white lg:text-[16px] text-[14px] font-robotoRegular mb-[15px]"
+                  className="text-white lg:text-[16px] text-[14px] font-monterrat font-normal mb-[15px]"
                 >
                   {description}
                 </p>
@@ -47,9 +48,9 @@ export default function Faq() {
         height={405}
         quality={100}
         priority={true}
-        className="hidden lg:flex"
+        className="hidden lg:flex self-center"
       />
-      <Image
+      {/* <Image
         src={'/escudocopadastorcidas.png'}
         alt="escudo copa das torcidas"
         width={100}
@@ -57,7 +58,7 @@ export default function Faq() {
         quality={100}
         priority={true}
         className="lg:hidden flex"
-      />
+      /> */}
     </div>
   )
 }
