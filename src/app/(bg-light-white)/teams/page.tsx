@@ -1,10 +1,11 @@
 'use client'
 
-import { ChangeEvent, useEffect, useState } from 'react'
+import { ChangeEvent, useEffect, useRef, useState } from 'react'
 import { MdSearch } from 'react-icons/md'
 import ModalQrCode from '@/app/components/ModalQrCode/ModalQrCode'
 import Button from '@/app/components/Button/Button'
 import { teams } from '@/utils/mock-teams'
+import autoAnimate from '@formkit/auto-animate'
 
 import SwiperTeams from '@/app/components/SwiperTeams/SwiperTeams'
 import { Spinner } from '@nextui-org/react'
@@ -13,12 +14,17 @@ import { useAppContext } from '@/context/AppContext'
 import ModalAllTeams from '@/app/components/ModalAllTeams/ModalAllTeams'
 
 export default function Teams() {
+  const parent = useRef(null)
   const { setModalVisible } = useAppContext()
   const [searchTerm, setSearchTerm] = useState('')
 
   const filteredTeams = teams.filter((item) => {
     return item.name.toLowerCase().includes(searchTerm.toLowerCase())
   })
+
+  useEffect(() => {
+    parent.current && autoAnimate(parent.current)
+  }, [parent])
 
   const handleSearchChange = (event: ChangeEvent<HTMLInputElement>) => {
     setSearchTerm(event.target.value)
@@ -29,7 +35,10 @@ export default function Teams() {
   }, [])
 
   return (
-    <div className="flex w-full z-10 lg:p-16 p-4 flex-col lg:flex-row justify-between gap-10 items-center">
+    <div
+      ref={parent}
+      className="flex w-full z-10 min-h-[90vh] lg:p-16 p-4 flex-col lg:flex-row justify-between gap-10 items-center"
+    >
       {!load ? (
         <div className="h-[450px] flex w-full justify-center">
           <Spinner size="lg" color="primary" />
