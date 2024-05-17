@@ -11,6 +11,7 @@
     "prettier:fix": "npx prettier --write ."
   },
   "dependencies": {
+    "@formkit/auto-animate": "^0.8.2",
     "@nextui-org/react": "^2.2.10",
     "framer-motion": "^11.0.14",
     "next": "14.1.3",

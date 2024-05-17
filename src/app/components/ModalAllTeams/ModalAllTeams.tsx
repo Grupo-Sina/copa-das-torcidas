@@ -83,7 +83,7 @@ export default function ModalAllTeams() {
                 ))}
               </div>
               <Button
-                className={`h-[33px] font-headingExtraBold sm:py-[12px] w-full lg:px-[32px] px-[18px]  text-tiny text-[12px] md:text-[12px] lg:text-[14px] rounded-[100px] bg-[#00E46F]  text-[#001F6D]`}
+                className={`lg:hidden flex h-[33px] font-headingExtraBold sm:py-[12px] w-full lg:px-[32px] px-[18px]  text-tiny text-[12px] md:text-[12px] lg:text-[14px] rounded-[100px] bg-[#00E46F]  text-[#001F6D]`}
                 onClick={() => setModalVisible(undefined)}
               >
                 FECHAR
