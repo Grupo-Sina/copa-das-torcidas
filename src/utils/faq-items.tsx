@@ -11,7 +11,7 @@ export const faqItems = [
         <b>Instagram @copadatorcidas</b> que as missões são publicadas lá.{' '}
         <b>
           Mas fica ligado que para poder ganhar, você tem que ter um cadastro no
-          Esportes da Sorte. 
+          Esportes da Sorte.
         </b>
       </>,
       <>
