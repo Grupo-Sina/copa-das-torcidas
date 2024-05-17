@@ -2,6 +2,7 @@
 import { faqItems } from '@/utils/faq-items'
 import { Accordion, AccordionItem } from '@nextui-org/react'
 import Image from 'next/image'
+import { MdArrowDropUp, MdArrowDropDown } from 'react-icons/md'
 
 export default function Faq() {
   return (
@@ -26,6 +27,13 @@ export default function Faq() {
                 title:
                   'text-white font-microsportBold  lg:text-[20px] text-[16px] ',
               }}
+              indicator={({ isOpen }) =>
+                isOpen ? (
+                  <MdArrowDropUp className="text-white text-[32px]" />
+                ) : (
+                  <MdArrowDropDown className="text-white text-[32px]" />
+                )
+              }
             >
               <hr className="mb-[10px]" />
               {item.descriptions.map((description, indexDescription) => (
