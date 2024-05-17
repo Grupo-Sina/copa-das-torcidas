@@ -5,14 +5,14 @@ import Image from 'next/image'
 
 export default function Faq() {
   return (
-    <div className="flex  justify-evenly w-full relative flex-col lg:flex-row lg:px-5 px-0 min-h-[83vh]">
-      <div className="flex flex-col lg:w-[1123px] w-full z-10 lg:p-16 p-4 lg:gap-10">
+    <div className=" flex w-full relative flex-col lg:flex-row lg:px-5 px-0 lg:h-[800px]">
+      <div className="flex flex-col lg:w-[1024px] w-full z-10 lg:p-16 p-4 lg:gap-10">
         <h1 className="mt-3 mb-4 lg:mb-0 lg:ml-4 text-shadow lg:text-start text-center text-shadow-lg sm:text-shadow-none font-brakedBold text-[#001F6D] text-[48px] lg:text-[100px] leading-10">
           PERGUNTAS FREQUENTES
         </h1>
 
         <Accordion
-          className=" text-white lg:w-[805px] rounded-xl"
+          className=" text-white lg:w-[805px] rounded-xl "
           variant="splitted"
           fullWidth
           defaultExpandedKeys={['0']}
