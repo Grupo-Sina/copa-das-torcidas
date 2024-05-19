@@ -1,6 +1,6 @@
 import React, { createContext, useContext, ReactNode, useState } from 'react'
 
-export type ModalVisible = 'qrcode' | 'tutorial' | 'allteams' | undefined
+export type ModalVisible = 'qrcode' | 'tutorial' | undefined
 
 type AppContextType = {
   modalVisible: ModalVisible

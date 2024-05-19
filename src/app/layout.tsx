@@ -5,7 +5,6 @@ import 'react-responsive-carousel/lib/styles/carousel.min.css'
 import Providers from './providers'
 import { Suspense } from 'react'
 import GoogleAnalytics from './components/GoogleAnalytics/GoogleAnalytics'
-import 'swiper/css'
 
 export const metadata: Metadata = {
   title: 'Copa das Torcidas',

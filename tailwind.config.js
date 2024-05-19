@@ -20,7 +20,6 @@ module.exports = {
         miniMobile: '470px',
       },
       fontFamily: {
-        monterrat: ['Montserrat Regular', 'sans-serif'],
         headingExtraLight: ['Heading Pro Trial Extra Light', 'sans-serif'],
         headingLight: ['Heading Pro Trial Light', 'sans-serif'],
         heading: ['Heading Pro Trial', 'sans-serif'],
