@@ -2,7 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-
 @font-face {
   font-family: "Montserrat Regular";
   src: url("./fonts/Montserrat-Regular.ttf") format("truetype");
@@ -134,3 +133,96 @@ body,
 .no-padding {
   padding: 0 !important;
 }
+
+.swiper {
+  width: 100%;
+  height: 100%;
+
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+
+}
+
+.mySwiper{
+  display: flex;
+  align-items: center;
+}
+
+.hidden-mobile{
+  display: none;
+  @media(min-width: 1024px){
+    display: contents;
+  }
+}
+
+.background-light{
+  background-image: url('/lightbg.png');
+  @media(min-width: 1024px){
+    background-image: url('/bg-white.png')
+  }
+  
+}
+
+.height-thin{
+  @media(max-width: 1024px){
+    height: 33px !important;
+  }  
+}
+
+.button-height-thin{
+  height: 26px !important; 
+}
+
+.margin-bottom-object{
+  @media(min-height: 333px){
+    bottom: -320px;
+  }
+  @media(min-height: 490px){
+    bottom: -220px;
+  }
+  @media(min-height: 598px){
+    bottom: -100px;
+  }
+  @media(min-height: 747px){
+    bottom: 0px;
+  }
+  bottom: -500px; 
+
+}
+
+.margin-bottom-object-faq{
+  @media(min-height: 333px){
+    bottom: -480px;
+  }
+  @media(min-height: 490px){
+    bottom: -380px;
+  }
+  @media(min-height: 598px){
+    bottom: -310px;
+  }
+  @media(min-height: 668px){
+    bottom: -240px;
+  }
+  @media(min-height: 747px){
+    bottom: -180px;
+  }
+  @media(min-height: 847px){
+    bottom: -60px;
+  }
+  @media(min-height: 947px){
+    bottom: -0px;
+  }
+  bottom: 0px; 
+
+}
+
+
+
+
