@@ -18,7 +18,7 @@ export default function ModalQrCode() {
         }}
         className="bg-[#001F6D] max-w-[820px] m-5"
       >
-        <ModalContent>
+        <ModalContent className="lg:p-8">
           {() => (
             <>
               <ModalHeader className="flex flex-col gap-1 font-robotoRegular font-bold text-[24px] text-[#FFF] ">
