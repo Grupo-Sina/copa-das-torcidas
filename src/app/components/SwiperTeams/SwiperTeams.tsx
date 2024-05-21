@@ -69,7 +69,17 @@ export default function SwiperTeams({ teams }: SwiperTeamProps) {
                   key={index}
                   className={`${index !== 0 && 'border-l-[0.5px] border-white'}   bg-[#001F6D] px-6  flex flex-col items-center justify-between h-[310px]`}
                 >
-                  {item.image && <Image src={item.image} alt="" />}
+                  {item.image && (
+                    <Image
+                      src={item.image}
+                      alt=""
+                      width={100}
+                      height={100}
+                      className="w-[100px] h-[100px]"
+                      quality={100}
+                      priority
+                    />
+                  )}
 
                   <div className="inline-block">
                     <p className="line-clamp-1 lg:text-[20px] sm:text-[18px] text-[16px] text-[#FFFFFF] font-bold font-microsportGold text-center ">

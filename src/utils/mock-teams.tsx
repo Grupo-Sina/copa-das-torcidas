@@ -2,6 +2,8 @@ import Celeste from '../../public/celeste-fc.png'
 import Tiradentes from '../../public/tiradentes-fc.png'
 import Ajax from '../../public/ajax-fc.png'
 import X from '../../public/x-fc.png'
+import BattiFacilLogo from '../../public/battifacillogo.png'
+import ArsenalLogo from '../../public/arsenallogo.png'
 import { StaticImageData } from 'next/image'
 
 export type TeamsProps = {
@@ -17,7 +19,7 @@ export const teams: TeamsProps[] = [
     deposit:
       'https://go.aff.esportesdasorte.com/uq6dlpfr?utm_source=BattiloukuraHP',
     link: 'http://bit.ly/battif%C3%A1cil',
-    image: X,
+    image: BattiFacilLogo,
   },
   {
     name: 'Celeste',
@@ -38,7 +40,7 @@ export const teams: TeamsProps[] = [
     deposit:
       'https://go.aff.esportesdasorte.com/hyl49nbs?utm_source=ArseloucosHP',
     link: 'http://bit.ly/arsenalguarulhos',
-    image: X,
+    image: ArsenalLogo,
   },
   {
     name: 'Tiradentes Vila Curuça',
