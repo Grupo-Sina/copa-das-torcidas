@@ -17,7 +17,17 @@ export default function TeamMobile({ team, index }: TeamMobileProps) {
         <p className="line-clamp-1 text-[16px] text-[#FFFFFF] font-bold font-robotoRegular text-center ">
           {team.name}
         </p>
-        {team.image && <Image src={team.image} alt="" />}
+        {team.image && (
+          <Image
+            src={team.image}
+            alt=""
+            width={100}
+            height={100}
+            className="w-[100px] h-[100px]"
+            quality={100}
+            priority
+          />
+        )}
       </div>
 
       <div className="w-full flex ">

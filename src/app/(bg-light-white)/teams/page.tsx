@@ -49,10 +49,10 @@ export default function Teams() {
             <p className="lg:max-w-[450px] lg:mb-3  lg:leading-[6rem] leading-[3rem] text-shadow font-brakedBold lg:text-start text-center sm:text-shadow-none  text-[#001F6D] text-[48px] lg:text-[100px]">
               TIMES PARTICIPANTES
             </p>
-            <p className="max-w-[450px] lg:flex hidden font-monterrat text-[24px] text-[#011E69] leading-[36px] font-medium">
+            {/* <p className="max-w-[450px] lg:flex hidden font-monterrat text-[24px] text-[#011E69] leading-[36px] font-medium">
               Lorem ipsum dolor sit amet consectetur. Feugiat iaculis ante massa
               dolor aliquam enim amet.
-            </p>
+            </p> */}
           </div>
           <div className="flex z-0 flex-col bg-[#001F6D] lg:h-[486px] xl:w-[68%] lg:w-[60%] w-full  rounded-[12px] md:px-[24px] px-[12px] pt-[24px] pb-[6px]">
             <div className="flex items-center mb-6 w-full justify-between gap-5">
@@ -104,7 +104,7 @@ export default function Teams() {
                 </div>
               </div>
             </div>
-            <div className="mt-6 lg:block hidden">
+            {/* <div className="mt-6 lg:block hidden">
               <p className="font-robotoBold xl:text-[14px] lg:text-[14px] ">
                 Informações importantes:
               </p>
@@ -113,7 +113,7 @@ export default function Teams() {
                 Cadastro e depósito para ajudar o time e o QR Code como
                 possibilidade para compartilhar com outras pessoas.
               </p>
-            </div>
+            </div> */}
           </div>
         </>
       )}
