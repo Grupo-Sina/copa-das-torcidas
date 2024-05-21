@@ -210,7 +210,7 @@ export default function Header() {
             target="_blank"
             rel="noopener noreferrer"
             radius="full"
-            className="bg-[#00E46F] text-[#003B9C] hidden md:flex py-3 px-8 font-headingBold text-[16px]"
+            className="hover:bg-white bg-[#00E46F] text-[#003B9C] hidden md:flex py-3 px-8 font-headingBold text-[16px]"
           >
             CADASTRE-SE
           </Button>
