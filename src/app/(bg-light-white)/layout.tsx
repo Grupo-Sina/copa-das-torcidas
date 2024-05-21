@@ -11,8 +11,8 @@ export default function AboutLayout({
     <div className="flex flex-col w-screen min-h-screen">
       <Header />
       <div
-        className="flex flex-1 bg-no-repeat bg-center bg-cover object-cover pb-10"
-        style={{ backgroundImage: "url('/bg-white.png')" }}
+        className="flex flex-1 bg-no-repeat bg-center bg-cover object-cover pb-10 background-light"
+        // style={{ backgroundImage: "url('/bg-white.png')" }}
       >
         {children}
       </div>

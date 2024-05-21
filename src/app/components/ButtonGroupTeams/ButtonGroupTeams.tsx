@@ -16,13 +16,15 @@ export default function ButtonGroupTeams({ link, deposit }: ButtonGroupTeams) {
     setModalVisible('qrcode')
   }
   return (
-    <div className="flex md:gap-[15px] gap-[3px] md:mr-[12px] mr-[8px] flex-wrap">
+    <div className="flex lg:gap-[15px] gap-[10px] flex-wrap">
       <Button
         title={'CADASTRE-SE'}
+        full
         onClick={() => window.open(link, '_blank')}
       />
-      <Button title={'VER QR CODE'} onClick={() => handleQrCodeClick()} />
+      <Button full title={'VER QR CODE'} onClick={() => handleQrCodeClick()} />
       <Button
+        full
         title={'DEPOSITE'}
         onClick={() => window.open(deposit, '_blank')}
       />
