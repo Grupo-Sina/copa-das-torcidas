@@ -128,3 +128,21 @@ body,
 .no-padding {
   padding: 0 !important;
 }
+
+@media (max-width: 768px) {
+  .flex-1 {
+    background-size: 100% 100%;
+  }
+}
+
+@media (max-width: 1024px) {
+  .first {
+    order: 2;
+  }
+  .second {
+    order: 1;
+  }
+  .third {
+    order: 3;
+  }
+}
