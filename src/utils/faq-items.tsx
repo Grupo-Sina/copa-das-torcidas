@@ -22,6 +22,7 @@ export const faqItems = [
         </b>{' '}
         E o melhor, fazendo isso é mais um jeito de você acumulara pontos para a
         sua torcida!
+        <LinkButton link="/teams" />
       </>,
     ],
   },

@@ -6,6 +6,7 @@ import { Montserrat } from 'next/font/google'
 import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
+import { MdArrowDropDown, MdArrowDropUp } from 'react-icons/md'
 
 const montserrat = Montserrat({
   subsets: ['latin'],
@@ -28,7 +29,7 @@ export default function Missions() {
         </h1>
         <Accordion
           // disabledKeys={['1']}
-          defaultExpandedKeys={['1']}
+          // defaultExpandedKeys={['1']}
           className="text-white xl:w-[805px] w-full p-6 pb-6 rounded-xl z-50"
           variant="splitted"
           fullWidth
@@ -48,6 +49,13 @@ export default function Missions() {
                 title:
                   'text-white font-microsportBold lg:text-[24px] text-[18px] uppercase',
               }}
+              indicator={({ isOpen }) =>
+                isOpen ? (
+                  <MdArrowDropUp className="text-white text-[32px]" />
+                ) : (
+                  <MdArrowDropDown className="text-white text-[32px]" />
+                )
+              }
               // className="p-3"
             >
               <hr
