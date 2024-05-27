@@ -40,17 +40,17 @@ export default function HomeContent() {
           className="mt-[-120px] h-[180px] w-[168px] lg:hidden"
         />
 
-        <div className="flex flex-col h-full my-8 lg:my-0 px-4 lg:pt-3 xl:pt-0 2xl:px-0 w-full">
+        <div className="flex flex-col h-full my-8 lg:my-0 px-8 lg:pt-3 xl:pt-0 w-full">
           <h1 className="xl:leading-tight text-center xl:text-left text-[56px] sm:text-[64px] lg:text-[100px] text-[#001F6D] font-brakedBold">
             COPA DAS TORCIDAS
           </h1>
           {shouldChangeText === false && (
             <>
               <p
-                className={`${montserrat.className} w-full sm:text-[28px] text-[18px] text-[#001F6D] text-justify items-center`}
+                className={`${montserrat.className} w-full sm:text-[24px] desktop:text-[28px] text-[18px] text-[#001F6D] text-justify items-center`}
               >
                 Foi dada a largada na{' '}
-                <span className="text-[18px] sm:text-[28px] font-bold">
+                <span className="text-[18px] sm:text-[24px] desktop:text-[28px] font-bold">
                   COPA DAS TORCIDAS
                 </span>
                 , que vai em busca da torcida mais apaixonada para premiar
@@ -72,7 +72,18 @@ export default function HomeContent() {
           {shouldChangeText && (
             <>
               <p
-                className={`${montserrat.className} text-[18px] md:text-[24px] text-[#001F6D] text-justify`}
+                className={`${montserrat.className} w-full sm:text-[24px] desktop:text-[28px] text-[18px] text-[#001F6D] text-justify items-center`}
+              >
+                Foi dada a largada na{' '}
+                <span className="text-[18px] sm:text-[24px] desktop:test-[28px] font-bold">
+                  COPA DAS TORCIDAS
+                </span>
+                , que vai em busca da torcida mais apaixonada para premiar
+                somente os de fé da Várzea!
+              </p>
+              <br />
+              <p
+                className={`${montserrat.className} text-[18px] md:text-[24px] desktop:text-[28px] text-[#001F6D] text-justify`}
               >
                 Como a Esportes da Sorte não deixa a brincadeira ficar chata
                 para ninguém, a procura pela torcida com o grito mais forte vai

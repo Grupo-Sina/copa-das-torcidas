@@ -16,7 +16,7 @@ export default function Faq() {
           className=" text-white lg:w-[805px] rounded-xl "
           variant="splitted"
           fullWidth
-          defaultExpandedKeys={['0']}
+          // defaultExpandedKeys={['0']}
         >
           {faqItems.map((item, index) => (
             <AccordionItem
