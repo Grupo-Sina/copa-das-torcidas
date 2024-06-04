@@ -39,6 +39,7 @@ export default function About() {
             loop
             className="w-full h-full rounded-xl object-fill"
             muted={shouldMutedVideoAbout}
+            onClick={() => setShouldMutedVideoAbout(false)}
           >
             <source src={'/video-home.mp4'} type="video/mp4" />{' '}
           </video>

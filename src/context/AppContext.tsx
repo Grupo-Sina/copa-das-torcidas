@@ -33,7 +33,7 @@ export const AppContextProvider: React.FC<{ children: ReactNode }> = ({
   const [teamLinkSelect, setTeamLinkSelect] = useState<string | undefined>(
     undefined,
   )
-  const [shouldMutedVideoAbout, setShouldMutedVideoAbout] = useState(false)
+  const [shouldMutedVideoAbout, setShouldMutedVideoAbout] = useState(true)
   const [volumeVideo, setVolumeVideo] = useState(0)
   const [tutorialSelect, setTutorialSelect] = useState<string | undefined>(
     undefined,
