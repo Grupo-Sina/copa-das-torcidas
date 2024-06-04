@@ -8,6 +8,8 @@ export default function HomeVideo() {
     setShouldMutedVideo,
     setVideoReady,
     setVideoLoaded,
+    volumeVideo,
+    setVolumeVideo,
   } = useAppContext()
   const windowWidth = useWindowWidth()
   const isLargeScreen = !!(windowWidth && windowWidth > 1024)
@@ -20,11 +22,15 @@ export default function HomeVideo() {
           width="100%"
           height="100%"
           playing
-          onClick={() => setShouldMutedVideo(false)}
+          onClick={() => {
+            setShouldMutedVideo(false)
+            setVolumeVideo(0.5)
+          }}
           muted={shouldMutedVideo}
           onReady={() => setVideoReady(true)}
           onProgress={(progress) => setVideoLoaded(progress.loaded)}
           loop
+          volume={volumeVideo}
         />
       )}
     </div>

@@ -5,6 +5,7 @@ import { useState } from 'react'
 import { Button } from '@nextui-org/react'
 import { useAppContext } from '@/context/AppContext'
 import { Montserrat } from 'next/font/google'
+import { MdVolumeDown, MdVolumeOff } from 'react-icons/md'
 
 const montserrat = Montserrat({
   subsets: ['latin'],
@@ -108,6 +109,21 @@ export default function HomeContent() {
         >
           <source src={'/video-home.mp4'} type="video/mp4" />{' '}
         </video>
+        <div className="z-10 self-end mt-[-35px] mr-[10px] bg-[#00E46F] rounded-full px-2 w-[30px] h-[30px] flex items-center justify-center ml-[-10px]">
+          {shouldMutedVideo ? (
+            <MdVolumeOff
+              color="#003B9C"
+              className="text-[38px]"
+              onClick={() => setShouldMutedVideo(false)}
+            />
+          ) : (
+            <MdVolumeDown
+              color="#003B9C"
+              className="text-[38px]"
+              onClick={() => setShouldMutedVideo(true)}
+            />
+          )}
+        </div>
       </div>
     </main>
   )
