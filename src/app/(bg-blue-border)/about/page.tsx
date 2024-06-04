@@ -1,7 +1,9 @@
 /* eslint-disable react/no-unescaped-entities */
 'use client'
-
+import { useAppContext } from '@/context/AppContext'
+import { MdVolumeDown, MdVolumeOff } from 'react-icons/md'
 export default function About() {
+  const { setShouldMutedVideoAbout, shouldMutedVideoAbout } = useAppContext()
   return (
     <div className="w-full h-auto relative overflow-x-hidden lg:py-12 lg:px-24 p-6">
       <div className="bg-white flex flex-col justify-between items-center lg:flex-row gap-12 w-full z-10 lg:px-8 lg:pt-4 lg:pb-8 rounded-xl p-6">
@@ -31,10 +33,30 @@ export default function About() {
           </p>
         </div>
 
-        <div className="lg:w-[50%] lg:h-[637px]">
-          <video autoPlay loop className="w-full h-full rounded-xl object-fill">
+        <div className="lg:w-[50%] lg:h-[637px] flex">
+          <video
+            autoPlay
+            loop
+            className="w-full h-full rounded-xl object-fill"
+            muted={shouldMutedVideoAbout}
+          >
             <source src={'/video-home.mp4'} type="video/mp4" />{' '}
           </video>
+          <div className="z-10 self-end  mb-[10px] ml-[-40px] lg:ml-[-50px] bg-[#00E46F] rounded-full px-2 w-[30px] h-[30px] lg:w-[40px] lg:h-[40px] flex items-center justify-center">
+            {shouldMutedVideoAbout ? (
+              <MdVolumeOff
+                color="#003B9C"
+                className="text-[38px] cursor-pointer"
+                onClick={() => setShouldMutedVideoAbout(false)}
+              />
+            ) : (
+              <MdVolumeDown
+                color="#003B9C"
+                className="text-[38px] cursor-pointer"
+                onClick={() => setShouldMutedVideoAbout(true)}
+              />
+            )}
+          </div>
         </div>
       </div>
     </div>

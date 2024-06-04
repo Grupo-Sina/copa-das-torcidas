@@ -45,6 +45,7 @@ export default function VolumeInput() {
         className="volume-slider appearance-none bg-transparent m-0 h-1 cursor-grab rounded-full"
         onChange={(e) => {
           setVolumeVideo(e.currentTarget.valueAsNumber)
+          setShouldMutedVideo(false)
         }}
       />
     </div>
