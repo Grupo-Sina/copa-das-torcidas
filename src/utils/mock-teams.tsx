@@ -2,6 +2,8 @@ import Celeste from '../../public/celeste-fc.png'
 import Tiradentes from '../../public/tiradentes-fc.png'
 import Ajax from '../../public/ajax-fc.png'
 import X from '../../public/x-fc.png'
+import Botafogo from '../../public/botafogoguaianases.png'
+import DaPontePraCa from '../../public/dapontepracafc.png'
 import BattiFacilLogo from '../../public/battifacillogo.png'
 import ArsenalLogo from '../../public/arsenallogo.png'
 import { StaticImageData } from 'next/image'
@@ -55,5 +57,18 @@ export const teams: TeamsProps[] = [
       'https://go.aff.esportesdasorte.com/snrg5a0o?utm_source=BattiFacilTorcidaFemininaHP',
     link: 'http://bit.ly/xdomorro',
     image: X,
+  },
+  {
+    name: 'Da Ponte Pra Cá',
+    deposit: 'https://go.aff.esportesdasorte.com/uxtodqsq?utm_source=DPChp',
+    link: 'https://go.aff.esportesdasorte.com/tsps1mxh?utm_source=DPCPaginadeCadastro',
+    image: DaPontePraCa,
+  },
+  {
+    name: 'Botafogo Guaianases',
+    deposit:
+      'https://go.aff.esportesdasorte.com/w6oooogy?utm_source=BDGHomePage',
+    link: 'https://go.aff.esportesdasorte.com/8pgjq2rx?utm_source=BDGPaginadeCadastro',
+    image: Botafogo,
   },
 ]
